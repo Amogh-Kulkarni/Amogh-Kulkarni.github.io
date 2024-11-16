@@ -1,14 +1,13 @@
 ---
-title: "On the Design Implication Elliptical and Non-Elliptical Wing Distributions."
+title: "Computational Study of Leading edge tubercles on propeller performance"
 collection: publications
-category: manuscripts
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-#date: 2009-10-01 - (Currently under review)
-venue: 'AIAA SciTech'
-#slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-#paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+permalink: /publications/CellPatterns_Covid
+venue: "Cell Patterns"
+date: 2020-07-23
+# citation: '<b>Raj Dandekar</b>, Chris Rackauckas, George Barbastathis. <i>Cell Patterns 2020.</i>'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+[[Paper]](https://RajDandekar.github.io/files/CellPatterns_Covid.pdf)
+
+## Abstract
+We have developed a globally applicable diagnostic COVID-19 model by augmenting the classical SIR epidemiological model with a neural network module. Our model does not rely upon previous epidemics like SARS/MERS and all parameters are optimized via machine learning algorithms used on publicly available COVID-19 data. The model decomposes the contributions to the infection time series to analyze and compare the role of quarantine control policies used in highly affected regions of Europe, North America, South America, and Asia in controlling the spread of the virus. For all continents considered, our results show a generally strong correlation between strengthening of the quarantine controls as learnt by the model and actions taken by the regions' respective governments. In addition, we have hosted our quarantine diagnosis results for the top 70 affected countries worldwide, on a public platform.
