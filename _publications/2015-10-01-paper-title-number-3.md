@@ -3,8 +3,8 @@ title: "On the Design Implication Elliptical and Non-Elliptical Wing Distributio
 collection: publications
 category: manuscripts
 # permalink: /publication/2015-10-01-paper-title-number-3
-excerpt: 'Paper'
-date: 2025-10-01-(Currently under Review)
+excerpt: '(Currently Under Review)'
+date: 2025-10-01
 venue: 'AIAA SciTech'
 # slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
 # paperurl: 'http://academicpages.github.io/files/paper3.pdf'
