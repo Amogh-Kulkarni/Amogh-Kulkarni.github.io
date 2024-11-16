@@ -11,6 +11,4 @@ venue: 'AIAA SciTech'
 # citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
 ---
 
-Designed 6 concept wings for elliptical and select non-elliptical lift distribution using potential flow code, VORLAX 
-VBA tool point. ****elaborate
-Developed database of solution iterations and analyzed select VORLAX wings, in Ansys Fluent CFD within an HPC environment to understand span load, lift, drag and leading-edge suction as a function of angle-of-attack. 
+Designed 6 concept wings for elliptical and select non-elliptical lift distribution using potential flow code, VORLAX VBA tool point. ****elaborate. Developed database of solution iterations and analyzed select VORLAX wings, in Ansys Fluent CFD within an HPC environment to understand span load, lift, drag and leading-edge suction as a function of angle-of-attack. 
