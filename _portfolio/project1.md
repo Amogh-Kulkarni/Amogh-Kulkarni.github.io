@@ -10,7 +10,7 @@ collection: portfolio
   }
   .content-row {
     display: grid;
-    grid-template-columns: 2fr; /* Single column for stacked images */
+    grid-template-columns: 1fr; /* Single column for stacked text and images */
     gap: 20px;
     align-items: center;
     margin-bottom: 20px;
@@ -28,18 +28,26 @@ collection: portfolio
     font-weight: bold;
     margin-bottom: 10px;
   }
+  .content-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid for images */
+    gap: 15px; /* Space between images */
+  }
 
-  /* Media Query for Larger Screens */
+  /* Optional: Adjust image grid on larger screens */
+  /* Uncomment the following if you want to control the number of columns on larger screens */
+  /*
   @media (min-width: 768px) {
-    .content-row {
-      grid-template-columns: 1fr 1fr; /* Two columns for text and images */
+    .content-images {
+      grid-template-columns: repeat(2, 1fr); /* Two columns */
     }
   }
+  */
 </style>
 
-This project aims to study wave drag reduction by varying the leading edge shape of cascade fins in a supersonic flow regime. Below, we present the key subparts of the project, detailing each aspect of the analysis and its outcomes.
+This project involves the 3D modeling and experimental analysis of a baseline small (10x4.7) 2-blade propeller and a modified propeller featuring bio-inspired Leading Edge Tubercules. The objective is to analyze and compare the performance metrics, specifically the power coefficient (Cp) and thrust coefficient (Ct), between the baseline and modified designs.
 
-## Subpart 1: Wave Drag Reduction by Cascade Fins
+## Bio-Inspired Leading Edge Tubercules
 
 ### Overview:
 <div class="subpart-container">
@@ -47,26 +55,26 @@ This project aims to study wave drag reduction by varying the leading edge shape
     <!-- Text Section for What, How, and Results -->
     <div class="content-text">
       <div class="content-title">What?</div>
-      <p>Study wave drag reduction by varying the leading edge shape of cascade fins in a supersonic flow regime.</p>
+      <p>3D model a baseline small (10x4.7) 2-blade propeller and a modified propeller with bio-inspired Leading Edge Tubercules to experimentally analyze performance (Cp, Ct).</p>
 
       <div class="content-title">How?</div>
       <ul>
-        <li>Used CATIA V5 to design baseline and modified cascade fins.</li>
-        <li>Conducted a benchmarking process of the CFD model by validating results in subsonic and supersonic regimes with established previous works.</li>
-        <li>Ran multiple simulations at M=2 with varied leading edge shapes to study drag coefficient (Cd).</li>
+        <li>Used surface modeling features in CATIA V5 to design the propellers ready to be 3D printed.</li>
+        <li>Assembled a test rig with a beam-type strain gauge to measure thrust and monitor motor power feed and prop RPM using an Arduino controller.</li>
+        <li>Performed static thrust wind tunnel experiments up to 5000 RPM.</li>
       </ul>
 
       <div class="content-title">Results</div>
       <ul>
-        <li>Implemented Fluent script with an established workflow to reduce preprocessing times.</li>
-        <li>15° Sharp leading edge displayed overall better performance and low drag with a weaker shock wave.</li>
+        <li>Reduced power requirement by 21% for lower RPMs and by 7% for higher RPMs at less than 5% thrust penalty.</li>
+        <li>Built relationships with rapid prototyping manufacturers.</li>
       </ul>
     </div>
 
     <!-- Image Section for What, How, and Results -->
     <div class="content-images">
       <img src="/images/propeller1_full.jpg" alt="Baseline Propeller" class="content-image">
-      <img src="/images/propeller1_simulation.jpg" alt="Propeller Simulation" class="content-image">
+      <img src="/images/propeller1_modified.jpg" alt="Modified Propeller with Tubercules" class="content-image">
     </div>
   </div>
 </div>
