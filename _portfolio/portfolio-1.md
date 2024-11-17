@@ -30,7 +30,6 @@ collection: portfolio
   }
 </style>
 
-# Data-Driven Methods for Temperature Prediction
 
 This project aims to utilize data-driven methods, including Linear Regression and Neural Networks, for predicting temperature coefficients based on simulated data. Below, we present the key subparts of the project, detailing each method and its implementation.
 
