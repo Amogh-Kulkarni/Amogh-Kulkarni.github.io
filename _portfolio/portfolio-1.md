@@ -61,7 +61,7 @@ This project aims to utilize data-driven methods, including Linear Regression an
   </div>
 </div>
 
-### Step 1: Analytical Model
+### 
 <div class="subpart-container">
   <div class="content-row">
     <!-- Text Section -->
@@ -81,7 +81,7 @@ This project aims to utilize data-driven methods, including Linear Regression an
   </div>
 </div>
 
-### Step 2: Naive Linear Regression
+### 
 <div class="subpart-container">
   <div class="content-row">
     <!-- Text Section -->
@@ -102,7 +102,7 @@ This project aims to utilize data-driven methods, including Linear Regression an
   </div>
 </div>
 
-### Step 3: Elaborate Model (Ranz & Marshall)
+### 
 <div class="subpart-container">
   <div class="content-row">
     <!-- Text Section -->
@@ -122,7 +122,7 @@ This project aims to utilize data-driven methods, including Linear Regression an
   </div>
 </div>
 
-### Step 4: Neural Network
+### 
 <div class="subpart-container">
   <div class="content-row">
     <!-- Text Section -->
@@ -143,7 +143,7 @@ This project aims to utilize data-driven methods, including Linear Regression an
   </div>
 </div>
 
-## Subpart 2: DNN Applied to Transient Heat Diffusion 1D
+## DNN Applied to Transient Heat Diffusion 1D
 
 ### Overview: What and How
 <div class="subpart-container">
@@ -170,7 +170,7 @@ This project aims to utilize data-driven methods, including Linear Regression an
   </div>
 </div>
 
-## Subpart 3: DNN Applied to Transient Heat Diffusion 2D
+## DNN Applied to Transient Heat Diffusion 2D
 
 ### Overview: What and How
 <div class="subpart-container">
