@@ -47,7 +47,7 @@ collection: portfolio
 
 This project involves the 3D modeling and experimental analysis of a baseline small (10x4.7) 2-blade propeller and a modified propeller featuring bio-inspired Leading Edge Tubercules. The objective is to analyze and compare the performance metrics, specifically the power coefficient (Cp) and thrust coefficient (Ct), between the baseline and modified designs.
 
-## Bio-Inspired Leading Edge Tubercules
+
 
 ### Overview:
 <div class="subpart-container">
