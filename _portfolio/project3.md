@@ -17,6 +17,9 @@ collection: portfolio
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    font-family: Arial, sans-serif; /* Set a default font */
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Set a default text color */
   }
 
   /* Container for overall content */
@@ -39,12 +42,11 @@ collection: portfolio
     margin-top: 30px; /* Adjusted for better separation */
   }
 
-  /* Grid layout for content rows */
+  /* Content Row Layout */
   .content-row {
-    display: grid;
-    grid-template-columns: 1fr; /* Single column layout */
+    display: flex;
+    flex-direction: column; /* Stack text and images vertically */
     gap: 20px;
-    align-items: start; /* Align items to the top */
     margin-bottom: 30px; /* Space below each content row */
   }
 
@@ -99,8 +101,9 @@ collection: portfolio
 </style>
 
 <div class="container">
+  # Advanced Aerodynamics: Wing Design
 
-Designing an aircraft wing for transonic flow with an elliptical lift distribution is a complex task that involves various computational and analytical methods. This project leverages Excel, VBA, and VORLAX to achieve an optimal wing design that balances aerodynamic efficiency and structural integrity.
+  Designing an aircraft wing for transonic flow with an elliptical lift distribution is a complex task that involves various computational and analytical methods. This project leverages Excel, VBA, and VORLAX to achieve an optimal wing design that balances aerodynamic efficiency and structural integrity.
 
   ## Overview:
   <div class="subpart-container">
