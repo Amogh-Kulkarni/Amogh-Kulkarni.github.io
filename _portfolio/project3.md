@@ -10,9 +10,9 @@ collection: portfolio
   }
   .content-row {
     display: grid;
-    grid-template-columns: 1fr; /* Single column for stacked text and images */
+    grid-template-columns: 2fr; /* Single column for stacked text and images */
     gap: 20px;
-    align-items: start;
+    align-items: center;
     margin-bottom: 20px;
   }
   .content-text {
@@ -27,18 +27,11 @@ collection: portfolio
   .content-title {
     font-weight: bold;
     margin-bottom: 10px;
-    font-size: 1.2em; /* Increased for better readability */
-  }
-  .content-images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid for images */
-    gap: 15px; /* Space between images */
+    /* Removed font-size to maintain uniformity */
   }
 </style>
 
 Designing an aircraft wing for transonic flow with an elliptical lift distribution is a complex task that involves various computational and analytical methods. This project leverages Excel, VBA, and VORLAX to achieve an optimal wing design that balances aerodynamic efficiency and structural integrity.
-
-
 
 ### Overview:
 <div class="subpart-container">
@@ -59,13 +52,13 @@ Designing an aircraft wing for transonic flow with an elliptical lift distributi
 
       <div class="content-title">Results</div>
       <ul>
-        <li>Achieved an optimized wing design with an elliptical lift distribution, enhancing aerodynamic efficiency.</li>
-        <li>Validated the design through computational simulations, ensuring structural integrity under specified flight conditions.</li>
+        <li>Reduced power requirement by 21% for lower RPMs and by 7% for higher RPMs at less than 5% thrust penalty.</li>
+        <li>Built relationships with rapid prototyping manufacturers.</li>
       </ul>
     </div>
 
     <!-- Image Section for What, How, and Results -->
-    <div class="content-images">
+    <div>
       <img src="/images/wing_design_1.jpg" alt="Selected Wing Design" class="content-image">
       <img src="/images/wing_design_2.jpg" alt="Wing Sections" class="content-image">
       <img src="/images/wing_design_3.jpg" alt="Lift Distribution" class="content-image">
