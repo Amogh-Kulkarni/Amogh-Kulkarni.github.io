@@ -7,7 +7,7 @@ collection: portfolio
 <style>
   .project-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
     gap: 20px;
     margin-top: 20px;
   }
@@ -26,9 +26,7 @@ collection: portfolio
 </style>
 
 <div class="project-container">
-  <div>
-    <img src="/images/propeller1_full.jpg" alt="Baseline Propeller" class="project-image">
-  </div>
+  <!-- Text Section -->
   <div class="project-text">
     <div class="project-title">What?</div>
     <p>3D model a baseline small (10x4.7) 2-blade propeller and a modified propeller with bio-inspired Leading Edge Tubercules to experimentally analyze performance (Cp, Ct).</p>
@@ -45,5 +43,10 @@ collection: portfolio
       <li>Reduced power requirement by 21% for lower RPMs and by 7% for higher RPMs at less than 5% thrust penalty.</li>
       <li>Built relationships with rapid prototyping manufacturers.</li>
     </ul>
+  </div>
+
+  <!-- Image Section -->
+  <div>
+    <img src="/images/propeller1_full.jpg" alt="Baseline Propeller" class="project-image">
   </div>
 </div>
