@@ -101,9 +101,8 @@ collection: portfolio
 </style>
 
 <div class="container">
-  # Wave Drag Reduction Analysis
-
-  This project focuses on studying wave drag reduction by varying the leading edge shape of cascade fins in a supersonic flow regime. The objective is to optimize the fin design to minimize drag while maintaining aerodynamic efficiency.
+  
+This project focuses on studying wave drag reduction by varying the leading edge shape of cascade fins in a supersonic flow regime. The objective is to optimize the fin design to minimize drag while maintaining aerodynamic efficiency.
 
   ## Overview:
   <div class="subpart-container">
