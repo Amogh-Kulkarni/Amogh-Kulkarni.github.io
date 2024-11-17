@@ -1,3 +1,10 @@
+<style>
+  .container {
+    max-width: 90% !important; /* Overrides any other width settings */
+    margin: 0 auto;
+  }
+</style>
+
 ---
 title: "Bio-Inspired Propeller Analysis"
 excerpt: "3D model analysis of propeller with bio-inspired Leading Edge Tubercules.<br/><img src='/images/propeller1_thumbnail.jpg'>"
