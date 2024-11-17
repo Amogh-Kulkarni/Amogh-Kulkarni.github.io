@@ -5,74 +5,34 @@ collection: portfolio
 ---
 
 <style>
-  /* Reset some basic elements for consistency */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  /* Ensure body takes full height and prevents horizontal overflow */
-  body, html {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    font-family: Arial, sans-serif; /* Set a default font */
-    line-height: 1.6; /* Improve readability */
-    color: #333; /* Set a default text color */
-  }
-
-  /* Container for overall content */
-  .container {
-    max-width: 1200px; /* Maximum width of the content */
-    width: 90%; /* Responsive width */
-    margin: 0 auto; /* Centers the container horizontally */
-    padding: 20px 0; /* Top and bottom padding */
-  }
-
-  /* Styling for the main title */
-  .container h1 {
-    font-size: 2.5em; /* Increased font size for prominence */
-    margin-bottom: 20px; /* Space below the title */
-    text-align: center; /* Center the title */
-  }
-
-  /* Container for each subpart */
   .subpart-container {
-    margin-top: 30px; /* Adjusted for better separation */
+    margin-top: 20px;
   }
-
-  /* Grid layout for content rows */
   .content-row {
-    display: flex;
-    flex-direction: column; /* Stack text and images vertically */
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for stacked text and images */
     gap: 20px;
-    margin-bottom: 30px; /* Space below each content row */
+    align-items: start;
+    margin-bottom: 20px;
   }
-
-  /* Styling for the text section */
   .content-text {
     padding: 10px;
   }
-
-  /* Styling for the images section */
-  .content-images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 15px; /* Space between images */
-  }
-
   .content-image {
-    width: 100%; /* Ensures each image fills the container's width */
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
-    object-fit: cover; /* Ensures images cover the container without distortion */
+    margin-top: 10px;
   }
-
   .content-title {
     font-weight: bold;
     margin-bottom: 10px;
     font-size: 1.2em; /* Increased for better readability */
+  }
+  .content-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid for images */
+    gap: 15px; /* Space between images */
   }
 
   /* Responsive Design for Medium Screens */
@@ -101,34 +61,40 @@ collection: portfolio
 </style>
 
 <div class="container">
- 
+  
 Designing an aircraft wing for transonic flow with an elliptical lift distribution is a complex task that involves various computational and analytical methods. This project leverages Excel, VBA, and VORLAX to achieve an optimal wing design that balances aerodynamic efficiency and structural integrity.
 
-  ### Overview:
-  <div class="subpart-container">
-    <div class="content-row">
-      <!-- Text Section for What and How -->
-      <div class="content-text">
-        <div class="content-title">What?</div>
-        <ul>
-          <li>Design an aircraft wing for a set of given structural and specified transonic regime and flight condition.</li>
-          <li>Design the wing for subcritical flow at critical Mach number to fit an elliptical lift distribution.</li>
-        </ul>
+### Overview:
+<div class="subpart-container">
+  <div class="content-row">
+    <!-- Text Section for What, How, and Results -->
+    <div class="content-text">
+      <div class="content-title">What?</div>
+      <ul>
+        <li>Design an aircraft wing for a set of given structural and specified transonic regime and flight condition.</li>
+        <li>Design the wing for subcritical flow at critical Mach number to fit an elliptical lift distribution.</li>
+      </ul>
 
-        <div class="content-title">How?</div>
-        <ul>
-          <li>Used Excel and VBA to create a custom-designed wing by varying wing thickness, camber line, sweep, taper ratio, and twist to produce VORLAX input files.</li>
-          <li>Used VORLAX to determine aerodynamic qualities and utilized MATLAB scripts for postprocessing the results.</li>
-        </ul>
-      </div>
+      <div class="content-title">How?</div>
+      <ul>
+        <li>Used Excel and VBA to create a custom-designed wing by varying wing thickness, camber line, sweep, taper ratio, and twist to produce VORLAX input files.</li>
+        <li>Used VORLAX to determine aerodynamic qualities and utilized MATLAB scripts for postprocessing the results.</li>
+      </ul>
 
-      <!-- Image Section for What and How -->
-      <div class="content-images">
-        <img src="/images/wing_design_1.jpg" alt="Selected Wing Design" class="content-image">
-        <img src="/images/wing_design_2.jpg" alt="Wing Sections" class="content-image">
-        <img src="/images/wing_design_3.jpg" alt="Lift Distribution" class="content-image">
-        <img src="/images/wing_design_4.jpg" alt="Pressure Distribution" class="content-image">
-      </div>
+      <div class="content-title">Results</div>
+      <ul>
+        <li>Achieved an optimized wing design with an elliptical lift distribution, enhancing aerodynamic efficiency.</li>
+        <li>Validated the design through computational simulations, ensuring structural integrity under specified flight conditions.</li>
+      </ul>
+    </div>
+
+    <!-- Image Section for What, How, and Results -->
+    <div class="content-images">
+      <img src="/images/wing_design_1.jpg" alt="Selected Wing Design" class="content-image">
+      <img src="/images/wing_design_2.jpg" alt="Wing Sections" class="content-image">
+      <img src="/images/wing_design_3.jpg" alt="Lift Distribution" class="content-image">
+      <img src="/images/wing_design_4.jpg" alt="Pressure Distribution" class="content-image">
     </div>
   </div>
+</div>
 </div>
