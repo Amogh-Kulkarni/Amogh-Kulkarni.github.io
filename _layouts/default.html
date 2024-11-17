@@ -9,6 +9,25 @@ layout: compress
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+
+    <!-- Add your custom styles here -->
+    <style>
+      /* Make container full-width */
+      .container,
+      .wrapper,
+      .content-wrapper,
+      .main-content {
+        max-width: 100% !important;  /* Use the entire width of the page */
+        width: 100% !important;       /* Full-width */
+        margin: 0 auto !important;    /* Center the container horizontally */
+        padding: 20px !important;     /* Optional: Adjust padding to your preference */
+      }
+
+      /* Optional: Hide large image placeholder */
+      .post-thumbnail {
+        display: none !important;
+      }
+    </style>
   </head>
 
   <body>
