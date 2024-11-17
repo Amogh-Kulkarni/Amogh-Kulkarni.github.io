@@ -1,52 +1,71 @@
 ---
 title: "Bio-Inspired Propeller Analysis"
-excerpt: "3D model analysis of propeller with bio-inspired Leading Edge Tubercules.<br/><img src='/images/propeller1_thumbnail.jpg'>"
+excerpt: "3D model analysis of propeller with bio-inspired Leading Edge Tubercules.<br/><img src='/images/propeller1_thumbnail.jpg' alt='Bio-Inspired Propeller Thumbnail'>"
 collection: portfolio
 ---
 
 <style>
-  .project-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 20px;
+  .subpart-container {
     margin-top: 20px;
   }
-  .project-image {
+  .content-row {
+    display: grid;
+    grid-template-columns: 2fr; /* Single column for stacked images */
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .content-text {
+    padding: 10px;
+  }
+  .content-image {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+    margin-top: 10px;
   }
-  .project-text {
-    padding: 10px;
-  }
-  .project-title {
+  .content-title {
     font-weight: bold;
     margin-bottom: 10px;
   }
+
+  /* Media Query for Larger Screens */
+  @media (min-width: 768px) {
+    .content-row {
+      grid-template-columns: 1fr 1fr; /* Two columns for text and images */
+    }
+  }
 </style>
 
-<div class="project-container">
-  <!-- Text Section -->
-  <div class="project-text">
-    <div class="project-title">What?</div>
-    <p>3D model a baseline small (10x4.7) 2-blade propeller and a modified propeller with bio-inspired Leading Edge Tubercules to experimentally analyze performance (Cp, Ct).</p>
+This project aims to study wave drag reduction by varying the leading edge shape of cascade fins in a supersonic flow regime. Below, we present the key subparts of the project, detailing each aspect of the analysis and its outcomes.
 
-    <div class="project-title">How?</div>
-    <ul>
-      <li>Used surface modeling features in CATIA V5 to design the propellers ready to be 3D printed.</li>
-      <li>Assembled a test rig with a beam-type strain gauge to measure thrust and monitor motor power feed and prop RPM using an Arduino controller.</li>
-      <li>Performed static thrust wind tunnel experiments up to 5000 RPM.</li>
-    </ul>
 
-    <div class="project-title">Results</div>
-    <ul>
-      <li>Reduced power requirement by 21% for lower RPMs and by 7% for higher RPMs at less than 5% thrust penalty.</li>
-      <li>Built relationships with rapid prototyping manufacturers.</li>
-    </ul>
-  </div>
+### Overview:
+<div class="subpart-container">
+  <div class="content-row">
+    <!-- Text Section for What, How, and Results -->
+    <div class="content-text">
+      <div class="content-title">What?</div>
+      <p>Study wave drag reduction by varying the leading edge shape of cascade fins in a supersonic flow regime.</p>
 
-  <!-- Image Section -->
-  <div>
-    <img src="/images/propeller1_full.jpg" alt="Baseline Propeller" class="project-image">
+      <div class="content-title">How?</div>
+      <ul>
+        <li>Used CATIA V5 to design baseline and modified cascade fins.</li>
+        <li>Conducted a benchmarking process of the CFD model by validating results in subsonic and supersonic regimes with established previous works.</li>
+        <li>Ran multiple simulations at M=2 with varied leading edge shapes to study drag coefficient (Cd).</li>
+      </ul>
+
+      <div class="content-title">Results</div>
+      <ul>
+        <li>Implemented Fluent script with an established workflow to reduce preprocessing times.</li>
+        <li>15° Sharp leading edge displayed overall better performance and low drag with a weaker shock wave.</li>
+      </ul>
+    </div>
+
+    <!-- Image Section for What, How, and Results -->
+    <div class="content-images">
+      <img src="/images/propeller1_full.jpg" alt="Baseline Propeller" class="content-image">
+      <img src="/images/propeller1_simulation.jpg" alt="Propeller Simulation" class="content-image">
+    </div>
   </div>
 </div>
