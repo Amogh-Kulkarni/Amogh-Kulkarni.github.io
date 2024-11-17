@@ -12,7 +12,7 @@ main:
     url: /portfolio/
 
   - title: "CV"
-    url: /cv/
+   # url: /cv/
     url: /files/Resume.pdf
 
 #  - title: "Muse"
