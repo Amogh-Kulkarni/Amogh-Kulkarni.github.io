@@ -10,7 +10,7 @@ collection: portfolio
   }
   .content-row {
     display: grid;
-    grid-template-columns: 1fr; /* Default to a single column layout */
+    grid-template-columns: 2fr; /* Default to a single column layout */
     gap: 20px;
     align-items: start;
     margin-bottom: 20px;
@@ -41,7 +41,6 @@ collection: portfolio
   }
 </style>
 
-# Advanced Aerodynamics: Wing Design
 
 This project involves designing an aircraft wing to meet specific structural, aerodynamic, and flight condition requirements for subcritical flow at the critical Mach number. The goal was to achieve an elliptical lift distribution while considering transonic effects and various design parameters.
 
