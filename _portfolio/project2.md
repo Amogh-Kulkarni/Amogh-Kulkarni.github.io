@@ -33,7 +33,7 @@ collection: portfolio
 
 This project aims to study wave drag reduction by varying the leading edge shape of cascade fins in a supersonic flow regime. Below, we present the key subparts of the project, detailing each aspect of the analysis and its outcomes.
 
-## Subpart 1: Wave Drag Reduction by Cascade Fins
+## 
 
 ### Overview:
 <div class="subpart-container">
