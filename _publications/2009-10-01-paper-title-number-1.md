@@ -2,7 +2,7 @@
 title: "Computational Study of Leading edge tubercles on propeller performance"
 collection: publications
 category: manuscripts
-# permalink: /publication/2009-10-01-paper-title-number-1
+permalink: /publication/2009-10-01-paper-title-number-1
 excerpt: '(Currently Under Review)'
 date: 2020-10-01
 venue: 'International Conference on Recent Advances in Computational Techniques (IC-RACT)'
