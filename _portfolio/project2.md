@@ -101,18 +101,17 @@ collection: portfolio
 </style>
 
 <div class="container">
-  
+  # Wave Drag Reduction Analysis
+
   This project focuses on studying wave drag reduction by varying the leading edge shape of cascade fins in a supersonic flow regime. The objective is to optimize the fin design to minimize drag while maintaining aerodynamic efficiency.
 
-  ### Overview:
+  ## Overview:
   <div class="subpart-container">
     <div class="content-row">
-      <!-- Text Section for What and How -->
+      <!-- Text Section for What, How, and Results -->
       <div class="content-text">
-        <div class="content-title">Overview:</div>
-        <ul>
-          <li>Study wave drag reduction by varying the leading edge shape of cascade fins in a supersonic flow regime.</li>
-        </ul>
+        <div class="content-title">What?</div>
+        <p>Study wave drag reduction by varying the leading edge shape of cascade fins in a supersonic flow regime.</p>
 
         <div class="content-title">How?</div>
         <ul>
@@ -120,9 +119,15 @@ collection: portfolio
           <li>Conducted a benchmarking process of the CFD model by validating results in subsonic and supersonic regimes with established previous works.</li>
           <li>Ran multiple simulations at M=2 with varied leading edge shapes to study drag coefficient (Cd).</li>
         </ul>
+
+        <div class="content-title">Results</div>
+        <ul>
+          <li>Implemented Fluent script with an established workflow to reduce preprocessing times.</li>
+          <li>15° Sharp leading edge displayed overall better performance and low drag with a weaker shock wave.</li>
+        </ul>
       </div>
 
-      <!-- Image Section for What and How -->
+      <!-- Image Section for What, How, and Results -->
       <div class="content-images">
         <img src="/images/cascade_fins_full.jpg" alt="Cascade Fins Full View" class="content-image">
         <img src="/images/cascade_fins_simulation.jpg" alt="Cascade Fins Simulation" class="content-image">
