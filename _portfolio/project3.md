@@ -64,6 +64,8 @@ collection: portfolio
   
 Designing an aircraft wing for transonic flow with an elliptical lift distribution is a complex task that involves various computational and analytical methods. This project leverages Excel, VBA, and VORLAX to achieve an optimal wing design that balances aerodynamic efficiency and structural integrity.
 
+
+
 ### Overview:
 <div class="subpart-container">
   <div class="content-row">
