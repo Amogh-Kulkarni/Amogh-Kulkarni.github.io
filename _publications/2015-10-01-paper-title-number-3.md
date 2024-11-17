@@ -1,8 +1,8 @@
 ---
 title: "On the Design Implication Elliptical and Non-Elliptical Wing Distributions"
 collection: publications
-category: manuscripts
-# permalink: /publication/2015-10-01-paper-title-number-3
+# category: manuscripts
+permalink: /publication/2015-10-01-paper-title-number-3
 excerpt: '(Currently Under Review)'
 date: 2025-10-01
 venue: 'AIAA SciTech'
