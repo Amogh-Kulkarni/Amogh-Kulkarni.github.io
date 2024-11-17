@@ -35,7 +35,7 @@ This project aims to utilize data-driven methods, including Linear Regression an
 
 ## Subpart 1: Linear Regression Heat Transfer Application
 
-### Overview: What and How
+### Overview:
 <div class="subpart-container">
   <div class="content-row">
     <!-- Text Section for What and How -->
@@ -61,7 +61,7 @@ This project aims to utilize data-driven methods, including Linear Regression an
   </div>
 </div>
 
-### 
+
 <div class="subpart-container">
   <div class="content-row">
     <!-- Text Section -->
@@ -81,7 +81,7 @@ This project aims to utilize data-driven methods, including Linear Regression an
   </div>
 </div>
 
-### 
+
 <div class="subpart-container">
   <div class="content-row">
     <!-- Text Section -->
@@ -102,7 +102,7 @@ This project aims to utilize data-driven methods, including Linear Regression an
   </div>
 </div>
 
-### 
+ 
 <div class="subpart-container">
   <div class="content-row">
     <!-- Text Section -->
@@ -122,7 +122,7 @@ This project aims to utilize data-driven methods, including Linear Regression an
   </div>
 </div>
 
-### 
+ 
 <div class="subpart-container">
   <div class="content-row">
     <!-- Text Section -->
@@ -145,7 +145,7 @@ This project aims to utilize data-driven methods, including Linear Regression an
 
 ## DNN Applied to Transient Heat Diffusion 1D
 
-### Overview: What and How
+### Overview:
 <div class="subpart-container">
   <div class="content-row">
     <!-- Text Section for What and How -->
@@ -172,7 +172,7 @@ This project aims to utilize data-driven methods, including Linear Regression an
 
 ## DNN Applied to Transient Heat Diffusion 2D
 
-### Overview: What and How
+### Overview:
 <div class="subpart-container">
   <div class="content-row">
     <!-- Text Section for What and How -->
