@@ -2,7 +2,7 @@
 title: "On the Design Implication Elliptical and Non-Elliptical Wing Distributions"
 collection: publications
 category: manuscripts
-# permalink: /publication/2010-10-01-paper-title-number-2
+permalink: /publication/2010-10-01-paper-title-number-2
 excerpt: '(Currently Under Review)'
 date: 2025-10-01
 venue: 'AIAA SciTech'
@@ -12,4 +12,5 @@ venue: 'AIAA SciTech'
 ---
 
 ## Abstract
+
 We have developed a globally applicable diagnostic COVID-19 model by augmenting the classical SIR epidemiological model with a neural network module. Our model does not rely upon previous epidemics like SARS/MERS and all parameters are optimized via machine learning algorithms used on publicly available COVID-19 data. The model decomposes the contributions to the infection time series to analyze and compare the role of quarantine control policies used in highly affected regions of Europe, North America.
