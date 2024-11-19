@@ -7,10 +7,11 @@ excerpt: ''
 date: 2021-12-01
 venue: ' 48th National Conference on Fluid Mechanics and Fluid Power (FMFP) Proceedings'
 # slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
-# paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-# citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
+# paperurl: 'http://Amogh-Kulkarni.github.io/files/Serrationspaper.pdf'
+citation: 'Anand, A., Kulkarni, A., Joshi, G. (2023). &quot;Effect of trailing edge serrations on-wing performance with and without tubercles Number 3.&quot; <i>Fluid Mechanics and Fluid Power (Vol. 3). FMFP 2021</i>. 1(3).'
 ---
+Anand, A., Kulkarni, A., Joshi, G. (2023). Effect of trailing edge serrations on-wing performance with and without tubercles
 
 ## Abstract
 
-We have developed a globally applicable diagnostic COVID-19 model by augmenting the classical SIR epidemiological model with a neural network module. Our model does not rely upon previous epidemics like SARS/MERS and all parameters are optimized via machine learning algorithms used on publicly available COVID-19 data. The model decomposes the contributions to the infection time series to analyze and compare the role of quarantine control policies used in highly affected regions of Europe, North America.
+Serrations are a new concept conceptualized from owl's wing, which has been utilized to enhance performance. It is capable of enhancing lift without increasing drag. Similarly, the concept of tubercles has been taken from Flippers of Humpback Whales and experiments in the wind tunnel have shown that the presence of tubercles causes an increase in total lift and delay in stall angles without a significant increase in drag. While the more orthodox airfoils with straight leading edges and trailing edge generate flow fields that tend to have limitations on Lift, Drag, and Stall, these leading-edge tubercles and Serrations have opened up a new field for experiments in fluid dynamics and aerodynamics applications. This paper aims to undertake a study of variation in aerodynamic parameters, mainly lift drag and stall characteristics of an asymmetrical, cambered wing incorporated with Serrations at Trailing Edge and the effect of serrations on asymmetrical wing with Leading Edge Tubercles using Computational Fluid Dynamics Simulation.
