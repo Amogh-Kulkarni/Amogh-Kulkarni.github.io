@@ -38,48 +38,55 @@ There I worked on dynamic traffic flow forecasting using Graph Neural Networks.
 
 # Education
 
-<div class="row">
+## MS in Aerospace Engineering
+Arizona State Unversity
 
-  <h2>Education</h2>
-  <hr>
+## B.Tech. in Automotive Design Engineering
+University of Petroleum and Energy Studies
 
-  <div class="row">
-    <div class="col-sm-9">
-      <h3 class="content_heading">Ph.D. in CEE</h3>
-      <h4 class="content_heading">Arizona State University, United States</h4>
-        <p class="content"><em> GPA 4.0 / 4.0</em></p>
-    </div>
-    <div class="col-sm-3" align="center">
-      <img src="/static/img/asu_logo.png" width="35%" alt="ASU Logo">
-      <p>(August 2021 - Present)</p>
-    </div>
+## Executive Certification utomotive and Mobility studies
+RWTH Aachen 
+
+
+
+
+# Education
+
+| Logo | Education |
+|------|-----------|
+| ![Arizona State University Logo](/assets/images/asu_logo.png) | **MS in Aerospace Engineering**  
+Arizona State University |
+| ![University of Petroleum and Energy Studies Logo](/assets/images/upes_logo.png) | **B.Tech. in Automotive Design Engineering**  
+University of Petroleum and Energy Studies |
+| ![RWTH Aachen Logo](/assets/images/rwth_logo.png) | **Executive Certification in Automotive and Mobility Studies**  
+RWTH Aachen |
+
+
+# Education
+
+<!-- Education Entry 1 -->
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+  <img src="/assets/images/asu_logo.png" alt="Arizona State University Logo" style="width: 100px; height: auto; margin-right: 20px;">
+  <div>
+    <h3>MS in Aerospace Engineering</h3>
+    <p>Arizona State University</p>
   </div>
+</div>
 
-
-  <div class="row">
-    <div class="col-sm-9">
-      <h3 class="content_heading">M.Tech in Design Engineering</h3>
-      <h4 class="content_heading">Birla Institute of Technology and Science (BITS) Pilani, Rajasthan</h4>
-        <p class="content"><em> GPA 9.62 / 10</em></p>
-    </div>
-    <div class="col-sm-3" align="center">
-      <img src="/static/img/bits.png" width="30%" alt="BITS Logo">
-      <p>(August 2019 - June 2021)</p>
-    </div>
+<!-- Education Entry 2 -->
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+  <img src="/assets/images/upes_logo.png" alt="University of Petroleum and Energy Studies Logo" style="width: 100px; height: auto; margin-right: 20px;">
+  <div>
+    <h3>B.Tech. in Automotive Design Engineering</h3>
+    <p>University of Petroleum and Energy Studies</p>
   </div>
+</div>
 
-
-
-  <div class="row">
-    <div class="col-sm-9">
-      <h3 class="content_heading">B.E. (Hons.) in Civil Engineering</h3>
-      <h4 class="content_heading">Birla Institute of Technology and Science (BITS) Pilani, Rajasthan</h4>
-        <p class="content"><em> GPA 9.19 / 10</em></p>
-    </div>
-    <div class="col-sm-3" align="center">
-      <img src="/static/img/bits.png" width="30%" alt="BITS Logo">
-      <p>(August 2011 - June 2015)</p>
-    </div>
+<!-- Education Entry 3 -->
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+  <img src="/assets/images/rwth_logo.png" alt="RWTH Aachen Logo" style="width: 100px; height: auto; margin-right: 20px;">
+  <div>
+    <h3>Executive Certification in Automotive and Mobility Studies</h3>
+    <p>RWTH Aachen</p>
   </div>
-
 </div>
