@@ -7,7 +7,7 @@ excerpt: ''
 date: 2020-10-01
 venue: 'International Conference on Recent Advances in Computational Techniques (IC-RACT) Proceedings'
 # slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
-# paperurl: 'http://Amogh-Kulkarni.github.io/files/PropCFDpaper.pdf'
+paperurl: 'http://Amogh-Kulkarni.github.io/files/PropCFDpaper.pdf'
 citation: 'Joshi, Akshay and Kulkarni, Amogh and Joshi, Ganapati. (June 26, 2020). &quot;Computational Study of Leading Edge Tubercles on Propeller Performance 3.&quot; <i>Proceedings of the International Conference on Recent Advances in Computational Techniques (IC-RACT) 2020</i>. 1(3).'
 ---
 
