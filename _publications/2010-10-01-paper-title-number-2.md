@@ -7,7 +7,7 @@ excerpt: ''
 date: 2021-12-01
 venue: ' 48th National Conference on Fluid Mechanics and Fluid Power (FMFP) Proceedings'
 # slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
-# paperurl: 'http://Amogh-Kulkarni.github.io/files/Serrationspaper.pdf'
+paperurl: 'http://Amogh-Kulkarni.github.io/files/Serrationspaper.pdf'
 citation: 'Anand, A., Kulkarni, A., Joshi, G. (2023). &quot;Effect of trailing edge serrations on-wing performance with and without tubercles Number 3.&quot; <i>Fluid Mechanics and Fluid Power (Vol. 3). FMFP 2021</i>. 1(3).'
 ---
 
