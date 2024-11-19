@@ -38,4 +38,48 @@ There I worked on dynamic traffic flow forecasting using Graph Neural Networks.
 
 # Education
 
-To further contribute to the Machine Learning community, I have a [YouTube](https://www.youtube.com/@borismeinardus) and [Medium](https://medium.com/@boris.meinardus) channel where I publish educational Machine Learning content.
+<div class="row">
+
+  <h2>Education</h2>
+  <hr>
+
+  <div class="row">
+    <div class="col-sm-9">
+      <h3 class="content_heading">Ph.D. in CEE</h3>
+      <h4 class="content_heading">Arizona State University, United States</h4>
+        <p class="content"><em> GPA 4.0 / 4.0</em></p>
+    </div>
+    <div class="col-sm-3" align="center">
+      <img src="/static/img/asu_logo.png" width="35%" alt="ASU Logo">
+      <p>(August 2021 - Present)</p>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-9">
+      <h3 class="content_heading">M.Tech in Design Engineering</h3>
+      <h4 class="content_heading">Birla Institute of Technology and Science (BITS) Pilani, Rajasthan</h4>
+        <p class="content"><em> GPA 9.62 / 10</em></p>
+    </div>
+    <div class="col-sm-3" align="center">
+      <img src="/static/img/bits.png" width="30%" alt="BITS Logo">
+      <p>(August 2019 - June 2021)</p>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-sm-9">
+      <h3 class="content_heading">B.E. (Hons.) in Civil Engineering</h3>
+      <h4 class="content_heading">Birla Institute of Technology and Science (BITS) Pilani, Rajasthan</h4>
+        <p class="content"><em> GPA 9.19 / 10</em></p>
+    </div>
+    <div class="col-sm-3" align="center">
+      <img src="/static/img/bits.png" width="30%" alt="BITS Logo">
+      <p>(August 2011 - June 2015)</p>
+    </div>
+  </div>
+
+</div>
