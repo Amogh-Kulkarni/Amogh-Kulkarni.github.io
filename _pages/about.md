@@ -36,31 +36,6 @@ Currently I am working as a **Student Researcher** at the Reliable Multimodal AI
 Additionally, I have professional experience working as an **Applied Machine Learning Student Researcher** at the Fraunhofer Heinrich Hertz Institute. \
 There I worked on dynamic traffic flow forecasting using Graph Neural Networks.
 
-# Education
-
-## MS in Aerospace Engineering
-Arizona State Unversity
-
-## B.Tech. in Automotive Design Engineering
-University of Petroleum and Energy Studies
-
-## Executive Certification utomotive and Mobility studies
-RWTH Aachen 
-
-
-
-
-# Education
-
-| Logo | Education |
-|------|-----------|
-| ![Arizona State University Logo](/assets/images/asu_logo.png) | **MS in Aerospace Engineering**  
-Arizona State University |
-| ![University of Petroleum and Energy Studies Logo](/assets/images/upes_logo.png) | **B.Tech. in Automotive Design Engineering**  
-University of Petroleum and Energy Studies |
-| ![RWTH Aachen Logo](/assets/images/rwth_logo.png) | **Executive Certification in Automotive and Mobility Studies**  
-RWTH Aachen |
-
 
 # Education
 
