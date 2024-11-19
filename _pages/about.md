@@ -39,6 +39,8 @@ There I worked on dynamic traffic flow forecasting using Graph Neural Networks.
 
 # Education
 
+
+
 <!-- Education Entry 1 -->
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
   <img src="/assets/images/asu_logo.png" alt="Arizona State University Logo" style="width: 100px; height: auto; margin-right: 20px;">
