@@ -9,8 +9,8 @@ redirect_from:
 ---
 
 
-I earned my Master's in Aerospace Engineering from Arizona State University, specializing in Aerodynamics and Computational Fluid Dynamics. My focus is pushing the boundaries of aerodynamic design by leveraging machine learning to revolutionize vehicle development.
-
+I earned my Master's in Aerospace Engineering from Arizona State University, specializing in Aerodynamics and Computational Fluid Dynamics. 
+My focus is pushing the boundaries of aerodynamic design by leveraging machine learning to revolutionize vehicle development.
 Currently, I'm honing my skills in scientific machine learning to accelerate aerodynamic design through data-driven approaches. I'm passionate about contributing to open-source projects and merging specialized development tools with engineering solutions to drive innovation in the aerospace and automotive industries.
 
 Standing on the shoulders of giants.
