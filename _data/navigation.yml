@@ -11,7 +11,7 @@ main:
   - title: "Projects"
     url: /portfolio/
 
-  - title: "CV"
+  - title: "Resume"
    # url: /cv/
     url: /files/Amogh_resume.pdf
 
