@@ -22,7 +22,7 @@ My research interest includes rapid aerodynamic prototyping, multifidelity metho
 
 <!-- Education Entry 1 -->
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
-  <img src="/assets/images/asu_logo.png" alt="Arizona State University Logo" style="width: 100px; height: auto; margin-right: 20px;">
+  <img src="/images/asu_logo.png" alt="Arizona State University Logo" style="width: 100px; height: auto; margin-right: 20px;">
   <div>
     <h3>MS in Aerospace Engineering</h3>
     <p>Arizona State University</p>
@@ -31,7 +31,7 @@ My research interest includes rapid aerodynamic prototyping, multifidelity metho
 
 <!-- Education Entry 2 -->
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
-  <img src="/assets/images/upes_logo.png" alt="University of Petroleum and Energy Studies Logo" style="width: 100px; height: auto; margin-right: 20px;">
+  <img src="/images/upes_logo.png" alt="University of Petroleum and Energy Studies Logo" style="width: 100px; height: auto; margin-right: 20px;">
   <div>
     <h3>B.Tech. in Automotive Design Engineering</h3>
     <p>University of Petroleum and Energy Studies</p>
@@ -40,7 +40,7 @@ My research interest includes rapid aerodynamic prototyping, multifidelity metho
 
 <!-- Education Entry 3 -->
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
-  <img src="/assets/images/rwth_logo.png" alt="RWTH Aachen Logo" style="width: 100px; height: auto; margin-right: 20px;">
+  <img src="/images/rwth_logo.png" alt="RWTH Aachen Logo" style="width: 100px; height: auto; margin-right: 20px;">
   <div>
     <h3>Executive Certification in Automotive and Mobility Studies</h3>
     <p>RWTH Aachen</p>
