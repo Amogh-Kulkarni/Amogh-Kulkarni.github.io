@@ -9,11 +9,12 @@ redirect_from:
 ---
 
 
-I earned my Master's in Aerospace Engineering from Arizona State University, specializing in Aerodynamics and Computational Fluid Dynamics. 
-My focus is pushing the boundaries of aerodynamic design by leveraging machine learning to revolutionize vehicle development.
-Currently, I'm honing my skills in scientific machine learning to accelerate aerodynamic design through data-driven approaches. I'm passionate about contributing to open-source projects and merging specialized development tools with engineering solutions to drive innovation in the aerospace and automotive industries.
+I specialize in Aerodynamics and Computational Fluid Dynamics, holding a Master's from Arizona State University. 
 
-Standing on the shoulders of giants.
+With over three years of technical and research experience, I've engineered passive bio-inspired solutions that boosted aerodynamic efficiency by [15%](https://amogh-kulkarni.github.io/publication/2010-10-01-paper-title-number-2), reducing energy consumption for specific [aero devices](https://amogh-kulkarni.github.io/portfolio/project1/). Currently, I'm honing my skills in Scientific Machine Learning to accelerate vehicle aerodynamic development through data-driven approaches.
+
+My research interest includes rapid aerodynamic prototyping, multifidelity methods and development of digital twins. I believe that true innovation builds upon the foundations laid by pioneers, and I'm committed to redefining what's possible in aerodynamic design.
+
 
 # Education
 
