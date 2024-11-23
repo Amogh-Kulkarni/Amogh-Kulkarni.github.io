@@ -9,15 +9,11 @@ redirect_from:
 ---
 
 
-* I'm a **Master of Science in Aerospace Engineering** graduate from Arizona State University, specializing in Aerodynamics and Computational Fluid Dynamics.
+I earned my Master's in Aerospace Engineering from Arizona State University, specializing in Aerodynamics and Computational Fluid Dynamics. My focus is pushing the boundaries of aerodynamic design by leveraging machine learning to revolutionize vehicle development.
 
-* My research interests include aerodynamic design optimization, machine learning applications in aerospace engineering, and the development of innovative CFD methodologies.
+Currently, I'm honing my skills in scientific machine learning to accelerate aerodynamic design through data-driven approaches. I'm passionate about contributing to open-source projects and merging specialized development tools with engineering solutions to drive innovation in the aerospace and automotive industries.
 
-* I am currently developing my skills in scientific machine learning to leverage data-driven approaches in rapid aerodynamic design.
-
-* I am also passionate about contributing to open-source projects and exploring the integration of software development with engineering solutions to drive innovation in the aerospace and automotive industries.
-
-
+Standing on the shoulders of giants.
 
 # Education
 
