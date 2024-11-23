@@ -31,7 +31,7 @@ My research interest includes rapid aerodynamic prototyping, multifidelity metho
 
 <!-- Education Entry 2 -->
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
-  <img src="/images/upes_logo.png" alt="University of Petroleum and Energy Studies Logo" style="width: 100px; height: auto; margin-right: 20px;">
+  <img src="/images/upes_logo.jpg" alt="University of Petroleum and Energy Studies Logo" style="width: 100px; height: auto; margin-right: 20px;">
   <div>
     <h3>B.Tech. in Automotive Design Engineering</h3>
     <p>University of Petroleum and Energy Studies</p>
