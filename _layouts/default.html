@@ -49,7 +49,22 @@ layout: compress
   
     <!-- Initialize Darkmode.js -->
     <script>
-      new Darkmode().showWidget();
+      const options = {
+        bottom: '32px', // Position from the bottom
+        right: '32px', // Position from the right
+        left: 'unset', // Position from the left
+        time: '0.5s', // Transition time
+        mixColor: '#fff', // Color used in the transition
+        backgroundColor: '#fff', // Background color in light mode
+        buttonColorDark: '#100f2c', // Button color in dark mode
+        buttonColorLight: '#fff', // Button color in light mode
+        saveInCookies: true, // Save user preference in cookies
+        label: '🌓', // Text or icon for the button
+        autoMatchOsTheme: true // Automatically match OS theme
+      }
+    
+      const darkmode = new Darkmode(options);
+      darkmode.showWidget();
     </script>
     
     {% include scripts.html %}
