@@ -13,7 +13,7 @@ I specialize in Aerodynamics and Computational Fluid Dynamics, holding a Master'
 
 With over three years of technical and research experience, I've engineered passive bio-inspired solutions that boosted aerodynamic efficiency by [15%](https://amogh-kulkarni.github.io/publication/2010-10-01-paper-title-number-2), reducing energy consumption for specific [aero devices](https://amogh-kulkarni.github.io/portfolio/project1/). Currently, I'm honing my skills in Scientific Machine Learning to accelerate vehicle aerodynamic development through data-driven approaches.
 
-My research interest includes rapid aerodynamic prototyping, multifidelity methods and development of digital twins. I believe that true innovation builds upon the foundations laid by pioneers, and I'm committed to redefining what's possible in aerodynamic design.
+My research interest includes rapid aerodynamic prototyping, aerodynamic shape optimisation, multifidelity methods and development of digital twins. I believe that true innovation builds upon the foundations laid by pioneers, and I'm committed to redefining what's possible in aerodynamic design.
 
 
 # Education
