@@ -11,5 +11,5 @@ venue: 'International Conference on Recent Advances in Computational Techniques 
 ---
 
 <p>
-  My research includes the <a href="/portfolio/project2/">Numerical Analysis of Wavedrag on Cascade Fins</a>, where I explore varying the leading edge shape of cascade fins in a supersonic flow regime.
+  My research includes the <a href="/portfolio/project2/">Numerical Analysis of Wavedrag on Cascade Fins</a>, where I explore various leading edge shapes of cascade fins in a supersonic flow regime.
 </p>
