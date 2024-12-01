@@ -2,7 +2,7 @@
 title: "Numerical Analysis of Wave Drag reduction in Cascade Fins by Altering Leading Edge Shape"
 collection: publications
 # category: conferences
-permalink: /_portfolio/project2.md
+permalink: /_portfolio/project2
 excerpt: ' '
 date: 2020-02-17
 venue: 'International Conference on Recent Advances in Computational Techniques (IC-RACT)'
