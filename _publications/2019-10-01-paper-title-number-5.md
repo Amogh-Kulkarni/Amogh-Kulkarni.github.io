@@ -13,4 +13,4 @@ excerpt: 'SAE International Powertrain, Fuels and Lubricants Meeting 2019 Confer
 
 ## Abstract
 
-Designed 6 concept wings for elliptical and select non-elliptical lift distribution using potential flow code, VORLAX VBA tool point. ****elaborate. Developed database of solution iterations and analyzed select VORLAX wings, in Ansys Fluent CFD within an HPC environment to understand span load, lift, drag and leading-edge suction as a function of angle-of-attack. 
+Presented a concept to improve the breathing capability of a naturally aspirated engine.Conceptualized a variable intake resonator which achieves the ram-effect over a wider RPM range facilitating an increase in engine volumetric efficiency, potentially downsizing the engine.
