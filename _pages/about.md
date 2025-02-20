@@ -73,7 +73,7 @@ My research interest includes rapid aerodynamic prototyping, aerodynamic shape o
 
 <!-- Education Entry 3 -->
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
-  <img src="/images/IISc_Master_Seal_Black_logo_logo.jpg" alt="RWTH Aachen Logo" style="width: 100px; height: auto; margin-right: 20px;">
+  <img src="/images/IISc_Master_Seal_Black_logo.jpg" alt="RWTH Aachen Logo" style="width: 100px; height: auto; margin-right: 20px;">
   <div>
     <h3>Research Inter</h3>
     <p>Indian Institute of Science, IISc</p>
