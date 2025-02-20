@@ -64,7 +64,7 @@ My research interest includes rapid aerodynamic prototyping, aerodynamic shape o
 
 <!-- Education Entry 2 -->
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
-  <img src="/images/DIAT_logo.jpg" alt="University of Petroleum and Energy Studies Logo" style="width: 100px; height: auto; margin-right: 20px;">
+  <img src="/images/DIAT_logo.png" alt="DIAT, DRDO Logo" style="width: 100px; height: auto; margin-right: 20px;">
   <div>
     <h3>Research Assistant</h3>
     <p>Defense Institute of Advanced Technology, DIAT, DRDO</p>
@@ -73,9 +73,9 @@ My research interest includes rapid aerodynamic prototyping, aerodynamic shape o
 
 <!-- Education Entry 3 -->
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
-  <img src="/images/IISc_Master_Seal_Black_logo.jpg" alt="RWTH Aachen Logo" style="width: 100px; height: auto; margin-right: 20px;">
+  <img src="/images/IISc_Master_Seal_Black_logo.jpg" alt="IISc Logo" style="width: 100px; height: auto; margin-right: 20px;">
   <div>
-    <h3>Research Inter</h3>
+    <h3>Research Intern</h3>
     <p>Indian Institute of Science, IISc</p>
   </div>
 </div>
