@@ -53,7 +53,7 @@ My research interest includes rapid aerodynamic prototyping, aerodynamic shape o
 
 
 
-<!-- Education Entry 1 -->
+<!-- RE Entry 1 -->
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
   <img src="/images/asu_logo.png" alt="Arizona State University Logo" style="width: 100px; height: auto; margin-right: 20px;">
   <div>
@@ -62,7 +62,7 @@ My research interest includes rapid aerodynamic prototyping, aerodynamic shape o
   </div>
 </div>
 
-<!-- Education Entry 2 -->
+<!-- RE Entry 2 -->
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
   <img src="/images/DIAT_logo.png" alt="DIAT, DRDO Logo" style="width: 100px; height: auto; margin-right: 20px;">
   <div>
@@ -71,7 +71,7 @@ My research interest includes rapid aerodynamic prototyping, aerodynamic shape o
   </div>
 </div>
 
-<!-- Education Entry 3 -->
+<!-- RE Entry 3 -->
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
   <img src="/images/IISc_Master_Seal_Black_logo.jpg" alt="IISc Logo" style="width: 100px; height: auto; margin-right: 20px;">
   <div>
