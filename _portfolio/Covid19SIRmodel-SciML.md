@@ -1,6 +1,6 @@
 ---
-title: "Data-Driven Methods for Temperature Prediction"
-excerpt: "Using machine learning methods such as Linear Regression and Neural Networks to predict temperature in heat transfer applications.<br/><img src='/images/temperature_prediction_thumbnail.jpg'>"
+title: "SciML-Powered Neural Network Assisted Epidemic Modeling"
+excerpt: "Leveraging SciML in Julia to develop a UDE framework that integrates neural networks with the SIR model for diagnosing COVID-19 quarantine effects.<br/><img src='/images/epidemic_model_thumbnail.jpg'>"
 collection: portfolio
 ---
 
@@ -10,7 +10,7 @@ collection: portfolio
   }
   .content-row {
     display: grid;
-    grid-template-columns: 2fr; /* Single column for stacked images */
+    grid-template-columns: 2fr 1fr; /* Two columns: text and images */
     gap: 20px;
     align-items: center;
     margin-bottom: 20px;
@@ -30,170 +30,144 @@ collection: portfolio
   }
 </style>
 
+## 1. Introduction and Motivation
 
-This project aims to utilize data-driven methods, including Linear Regression and Neural Networks, for predicting temperature coefficients based on simulated data. Below, we present the key subparts of the project, detailing each method and its implementation.
-
-## Subpart 1: Linear Regression Heat Transfer Application
-
-### Overview:
 <div class="subpart-container">
   <div class="content-row">
-    <!-- Text Section for What and How -->
     <div class="content-text">
-      <div class="content-title">What?</div>
-      <p>Build a model based on Linear Regression and Neural Networks to predict the heat transfer coefficient using data simulated with OpenFOAM. The model involves openfoam simulations for different physical features (u, rho, lambda, Cp).</p>
-
-      <div class="content-title">How?</div>
-      <ul>
-        <li>Dimensionless parameters (Re, Pr, Nu) were used to reduce the study to find Nu number.</li>
-        <li>Data was uploaded on Google Colab for analysis.</li>
-        <li>Calculated Re, Pr, Nu analytically using CFD data and plotted correlations.</li>
-        <li>Plotted Nu correlation parity plots to evaluate data accuracy.</li>
-        <li>Developed and compared analytical, linear regression, and neural network models to assess the accuracy and parity of Nu number predictions.</li>
-      </ul>
+      <p>
+        The COVID-19 pandemic highlighted the need for robust, interpretable models that capture the effects of interventions such as quarantine and lockdowns. Traditional SIR models often lack the flexibility to handle complex, time-varying measures. This project enhances the SIR model by integrating a neural network within a Universal Differential Equation (UDE) framework, capturing the dynamic influence of quarantine measures on the epidemic's spread using Italy as a case study.
+      </p>
     </div>
-
-    <!-- Image Section for What and How -->
     <div>
-      <img src="/images/linear_regression_overview_1.jpg" alt="Linear Regression Overview 1" class="content-image">
-      <img src="/images/linear_regression_overview_2.jpg" alt="Linear Regression Overview 2" class="content-image">
+      <img src="/images/epidemic_intro.jpg" alt="Epidemic Model Overview" class="content-image">
     </div>
   </div>
 </div>
 
+## 2. Methodology
+
+### 2.1 Model Development
 
 <div class="subpart-container">
   <div class="content-row">
-    <!-- Text Section -->
     <div class="content-text">
-      <div class="content-title">Analytical Model</div>
-      <ul>
-        <li>Pre-processed and cleaned CFD results.</li>
-        <li>Calculated Re, Pr, Nu from CFD data and plotted Re, Pr, Nu as functions of each other.</li>
-      </ul>
+      <div class="content-title">Core Model</div>
+      <p>
+        The project extends the classical SIR framework to a QSIR model by adding a quarantine compartment. A neural network (built with Lux.jl) is embedded as a subtractive term in the infected equation to model the time-dependent quarantine strength, \( Q(t) \), using the current state \([S, I, R]\) as input.
+      </p>
+      <p>
+        The differential equations are defined as:
+      </p>
+      <p>
+        \( \frac{dS}{dt} = -\beta \frac{S I}{N} \)<br/>
+        \( \frac{dI}{dt} = \beta \frac{S I}{N} - \gamma I - Q(t)\frac{I}{N} \)<br/>
+        \( \frac{dR}{dt} = \gamma I + \delta T \)<br/>
+        \( \frac{dT}{dt} = Q(t)\frac{I}{N} - \delta T \)
+      </p>
     </div>
-
-    <!-- Image Section -->
     <div>
-      <img src="/images/analytical_model_1.jpg" alt="Analytical Model 1" class="content-image">
-      <img src="/images/analytical_model_2.jpg" alt="Analytical Model 2" class="content-image">
+      <img src="/images/model_equations.jpg" alt="Model Equations" class="content-image">
     </div>
   </div>
 </div>
 
+### 2.2 Data and Preprocessing
 
 <div class="subpart-container">
   <div class="content-row">
-    <!-- Text Section -->
     <div class="content-text">
-      <div class="content-title">Naive Linear Regression</div>
+      <div class="content-title">Data Integration</div>
       <ul>
-        <li>Data was split into training and testing sets.</li>
-        <li>Trained using the training data.</li>
-        <li>Parity plots showed poor r² performance and high error.</li>
+        <li>Utilized COVID-19 data for Italy from the John Hopkins repository.</li>
+        <li>Processed infected counts (adjusted to exclude recovered and deceased), recovered, and dead counts.</li>
+        <li>Cleaned and structured time-series data to set initial conditions and parameters.</li>
       </ul>
     </div>
-
-    <!-- Image Section -->
     <div>
-      <img src="/images/naive_linear_regression_1.jpg" alt="Naive Linear Regression 1" class="content-image">
-      <img src="/images/naive_linear_regression_2.jpg" alt="Naive Linear Regression 2" class="content-image">
+      <img src="/images/data_preprocessing.jpg" alt="Data Preprocessing" class="content-image">
     </div>
   </div>
 </div>
 
- 
+### 2.3 Training and Optimization
+
 <div class="subpart-container">
   <div class="content-row">
-    <!-- Text Section -->
     <div class="content-text">
-      <div class="content-title">Elaborate Model (Ranz & Marshall)</div>
+      <div class="content-title">Optimization Strategy</div>
       <ul>
-        <li>Used empirical coefficients C<sub>n,m</sub> to approximate Nu values.</li>
-        <li>The elaborate model showed acceptable Nu correlation parity (in pink).</li>
+        <li>Implemented a log-based loss function comparing predicted (infected + quarantined) and recovered counts to observed data.</li>
+        <li>Utilized ADAM for initial optimization and BFGS for fine-tuning the neural network parameters.</li>
+        <li>Employed adjoint sensitivity analysis via DifferentialEquations.jl and DiffEqFlux for efficient gradient computation.</li>
       </ul>
     </div>
-
-    <!-- Image Section -->
     <div>
-      <img src="/images/elaborate_model_1.jpg" alt="Elaborate Model 1" class="content-image">
-      <img src="/images/elaborate_model_2.jpg" alt="Elaborate Model 2" class="content-image">
+      <img src="/images/optimization_flow.jpg" alt="Optimization Flow" class="content-image">
     </div>
   </div>
 </div>
 
- 
+### 2.4 Model Diagnostics and Interpretation
+
 <div class="subpart-container">
   <div class="content-row">
-    <!-- Text Section -->
     <div class="content-text">
-      <div class="content-title">Neural Network</div>
+      <div class="content-title">Diagnostic Insights</div>
       <ul>
-        <li>Used dense neural network of 3 hidden layers; each layer = 64 neurons.</li>
-        <li>Activation function: ReLU; Optimizer: Adam with a learning rate of 0.01.</li>
-        <li>Mean absolute error used for metrics, and the neural network outperformed all models.</li>
+        <li>Recovered time-dependent quarantine strength \( Q(t) \) and identified inflection points corresponding to government lockdown dates.</li>
+        <li>Validated model predictions by comparing the temporal evolution of infected and recovered cases with actual data.</li>
       </ul>
     </div>
-
-    <!-- Image Section -->
     <div>
-      <img src="/images/neural_network_1.jpg" alt="Neural Network 1" class="content-image">
-      <img src="/images/neural_network_2.jpg" alt="Neural Network 2" class="content-image">
+      <img src="/images/quarantine_strength_plot.jpg" alt="Quarantine Strength \( Q(t) \)" class="content-image">
     </div>
   </div>
 </div>
 
-## DNN Applied to Transient Heat Diffusion 1D
+## 3. Results and Discussion
 
-### Overview:
 <div class="subpart-container">
   <div class="content-row">
-    <!-- Text Section for What and How -->
     <div class="content-text">
-      <div class="content-title">What?</div>
-      <p>Build a Deep Neural Network to predict temperature evolution in a rod in a 1D transient thermal diffusion case. The rod material has a diffusion coefficient of a = 0.01 m²/s. Initial conditions: center of rod temperature = 400K, rest = 300K.</p>
-
-      <div class="content-title">How?</div>
+      <div class="content-title">Key Outcomes</div>
       <ul>
-        <li>Defined parameters like length, thermal diffusivity, total simulation time, time steps, and grid points.</li>
-        <li>Defined initial temperature distribution and the diffusion equation matrix using the finite difference method.</li>
-        <li>Developed a Deep Learning model with 2 hidden layers, each containing 128 units with ReLU activation.</li>
-        <li>Tuned the model for well-agreeable accuracy with the calculated temperature distribution.</li>
+        <li><strong>Predictive Accuracy:</strong> The model successfully captures epidemic dynamics, achieving an RMSE of ~7% on key infection predictions.</li>
+        <li><strong>Diagnostic Power:</strong> \( Q(t) \) closely aligns with the timing of Italy's lockdown, confirming its utility as a diagnostic tool.</li>
+        <li><strong>Generalizability:</strong> Extended methodology to assess quarantine impacts in over 75 countries, with results publicly hosted at [covid19ml.org](https://covid19ml.org).</li>
       </ul>
     </div>
-
-    <!-- Image Section for What and How -->
     <div>
-      <img src="/images/dnn_heat_diffusion_1d_overview_1.jpg" alt="DNN Heat Diffusion 1D Overview 1" class="content-image">
-      <img src="/images/dnn_heat_diffusion_1d_overview_2.jpg" alt="DNN Heat Diffusion 1D Overview 2" class="content-image">
+      <img src="/images/prediction_vs_data.jpg" alt="Prediction vs. Data" class="content-image">
     </div>
   </div>
 </div>
 
-## DNN Applied to Transient Heat Diffusion 2D
+## 4. Conclusion
 
-### Overview:
 <div class="subpart-container">
   <div class="content-row">
-    <!-- Text Section for What and How -->
     <div class="content-text">
-      <div class="content-title">What?</div>
-      <p>Build a Deep Neural Network to predict temperature evolution over a square in a 2D transient thermal diffusion case. The surface material has a diffusion coefficient a = 0.01 m²/s. Initial conditions: center temperature = 400K, rest = 300K.</p>
-
-      <div class="content-title">How?</div>
-      <ul>
-        <li>Defined parameters such as the size of the square domain, thermal diffusivity, total simulation time, time steps, and grid points.</li>
-        <li>Defined initial temperature distribution and set up the matrix for solving the diffusion equation using the finite difference method.</li>
-        <li>Developed a Deep Learning model with 2 hidden layers of 128 units each and used ReLU as the activation function.</li>
-        <li>Tuned the model to achieve accurate agreement with the calculated temperature distribution.</li>
-      </ul>
+      <p>
+        This project demonstrates that integrating neural networks with traditional differential equation models using SciML in Julia can yield expressive and interpretable epidemic models. By capturing real-time quarantine dynamics, the framework not only improves forecasting of COVID-19 trends but also provides actionable diagnostic insights into public health interventions.
+      </p>
     </div>
-
-    <!-- Image Section for What and How -->
     <div>
-      <img src="/images/dnn_heat_diffusion_2d_overview_1.jpg" alt="DNN Heat Diffusion 2D Overview 1" class="content-image">
-      <img src="/images/dnn_heat_diffusion_2d_overview_2.jpg" alt="DNN Heat Diffusion 2D Overview 2" class="content-image">
+      <img src="/images/model_conclusion.jpg" alt="Model Conclusion" class="content-image">
     </div>
   </div>
 </div>
 
+## 5. Future Work
+
+<div class="subpart-container">
+  <div class="content-row">
+    <div class="content-text">
+      <ul>
+        <li>Extend the model to incorporate additional compartments (e.g., asymptomatic or hospitalized).</li>
+        <li>Experiment with alternative neural network architectures and recurrent models to better capture temporal dependencies.</li>
+        <li>Integrate diverse data sources (e.g., mobility, testing rates) to refine quarantine impact estimation.</li>
+      </ul>
+    </div>
+  </div>
+</div>
