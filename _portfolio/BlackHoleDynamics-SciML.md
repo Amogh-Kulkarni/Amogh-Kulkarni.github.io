@@ -1,7 +1,3 @@
-<div class="container">
-  <!-- Research or project content goes here -->
-
-
 ---
 title: "Data-Driven Recovery of Relativistic Corrections in Black Hole Dynamics"
 excerpt: "Leveraging SciML and neural network-enhanced UDEs in Julia to capture relativistic effects in black hole orbits and gravitational waveform predictions.<br/><img src='/images/black_hole_model_thumbnail.jpg'>"
@@ -141,7 +137,4 @@ collection: portfolio
       <img src="/images/future_work.jpg" alt="Future Work" class="content-image">
     </div>
   </div>
-</div>
-
-
 </div>
