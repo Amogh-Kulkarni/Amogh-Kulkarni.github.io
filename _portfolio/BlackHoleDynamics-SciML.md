@@ -1,6 +1,6 @@
 ---
-title: "Data-Driven Methods for Temperature Prediction"
-excerpt: "Using machine learning methods such as Linear Regression and Neural Networks to predict temperature in heat transfer applications.<br/><img src='/images/temperature_prediction_thumbnail.jpg'>"
+title: "Data-Driven Recovery of Relativistic Corrections in Black Hole Dynamics"
+excerpt: "Leveraging SciML and neural network-enhanced UDEs in Julia to capture relativistic effects in black hole orbits and gravitational waveform predictions.<br/><img src='/images/black_hole_model_thumbnail.jpg'>"
 collection: portfolio
 ---
 
@@ -10,7 +10,7 @@ collection: portfolio
   }
   .content-row {
     display: grid;
-    grid-template-columns: 2fr; /* Single column for stacked images */
+    grid-template-columns: 2fr 1fr; /* Two columns: text and images */
     gap: 20px;
     align-items: center;
     margin-bottom: 20px;
@@ -30,171 +30,111 @@ collection: portfolio
   }
 </style>
 
+## 1. Introduction and Motivation
 
-This project aims to utilize data-driven methods, including Linear Regression and Neural Networks, for predicting temperature coefficients based on simulated data. Below, we present the key subparts of the project, detailing each method and its implementation.
-
-## Subpart 1: Linear Regression Heat Transfer Application
-
-### Overview:
 <div class="subpart-container">
   <div class="content-row">
-    <!-- Text Section for What and How -->
     <div class="content-text">
-      <div class="content-title">What?</div>
-      <p>Build a model based on Linear Regression and Neural Networks to predict the heat transfer coefficient using data simulated with OpenFOAM. The model involves openfoam simulations for different physical features (u, rho, lambda, Cp).</p>
-
-      <div class="content-title">How?</div>
-      <ul>
-        <li>Dimensionless parameters (Re, Pr, Nu) were used to reduce the study to find Nu number.</li>
-        <li>Data was uploaded on Google Colab for analysis.</li>
-        <li>Calculated Re, Pr, Nu analytically using CFD data and plotted correlations.</li>
-        <li>Plotted Nu correlation parity plots to evaluate data accuracy.</li>
-        <li>Developed and compared analytical, linear regression, and neural network models to assess the accuracy and parity of Nu number predictions.</li>
-      </ul>
+      <p>
+        Modeling black hole dynamics in strong gravitational fields requires capturing relativistic corrections that go beyond classical Newtonian physics. This project leverages SciML tools in Julia to develop a Universal Differential Equation (UDE) framework enhanced with neural networks. Our approach aims to recover these relativistic effects in orbital mechanics and gravitational waveforms, providing a data-driven correction to traditional models.
+      </p>
     </div>
-
-    <!-- Image Section for What and How -->
     <div>
-      <img src="/images/linear_regression_overview_1.jpg" alt="Linear Regression Overview 1" class="content-image">
-      <img src="/images/linear_regression_overview_2.jpg" alt="Linear Regression Overview 2" class="content-image">
+      <img src="/images/black_hole_intro.jpg" alt="Black Hole Dynamics Overview" class="content-image">
     </div>
   </div>
 </div>
 
+## 2. Methodology
+
+### 2.1 Orbital Models
 
 <div class="subpart-container">
   <div class="content-row">
-    <!-- Text Section -->
     <div class="content-text">
-      <div class="content-title">Analytical Model</div>
+      <div class="content-title">Classical & Relativistic Models</div>
       <ul>
-        <li>Pre-processed and cleaned CFD results.</li>
-        <li>Calculated Re, Pr, Nu from CFD data and plotted Re, Pr, Nu as functions of each other.</li>
+        <li><strong>Newtonian Orbit Model:</strong> Simulates orbital motion using classical mechanics.</li>
+        <li><strong>Relativistic Orbit Model:</strong> Incorporates Schwarzschild corrections to capture strong gravity effects.</li>
       </ul>
+      <p>
+        These models serve as benchmarks to assess the effectiveness of our neural network-enhanced model.
+      </p>
     </div>
-
-    <!-- Image Section -->
     <div>
-      <img src="/images/analytical_model_1.jpg" alt="Analytical Model 1" class="content-image">
-      <img src="/images/analytical_model_2.jpg" alt="Analytical Model 2" class="content-image">
+      <img src="/images/orbit_models.jpg" alt="Orbital Models" class="content-image">
     </div>
   </div>
 </div>
 
+### 2.2 Neural Network-Enhanced UDE
 
 <div class="subpart-container">
   <div class="content-row">
-    <!-- Text Section -->
     <div class="content-text">
-      <div class="content-title">Naive Linear Regression</div>
+      <div class="content-title">Data-Driven Correction</div>
       <ul>
-        <li>Data was split into training and testing sets.</li>
-        <li>Trained using the training data.</li>
-        <li>Parity plots showed poor r² performance and high error.</li>
+        <li>A neural network, implemented with Lux.jl, is embedded within the UDE to learn corrections to the orbital dynamics.</li>
+        <li>SciML tools (OrdinaryDiffEq, ModelingToolkit, etc.) are employed to numerically solve the differential equations and obtain orbital trajectories.</li>
+        <li>Gravitational waveforms are computed from the orbital paths using quadrupole formulas.</li>
       </ul>
     </div>
-
-    <!-- Image Section -->
     <div>
-      <img src="/images/naive_linear_regression_1.jpg" alt="Naive Linear Regression 1" class="content-image">
-      <img src="/images/naive_linear_regression_2.jpg" alt="Naive Linear Regression 2" class="content-image">
+      <img src="/images/neural_network_correction.jpg" alt="Neural Network Correction" class="content-image">
     </div>
   </div>
 </div>
 
- 
+### 2.3 Training and Optimization
+
 <div class="subpart-container">
   <div class="content-row">
-    <!-- Text Section -->
     <div class="content-text">
-      <div class="content-title">Elaborate Model (Ranz & Marshall)</div>
+      <div class="content-title">Optimization Process</div>
       <ul>
-        <li>Used empirical coefficients C<sub>n,m</sub> to approximate Nu values.</li>
-        <li>The elaborate model showed acceptable Nu correlation parity (in pink).</li>
+        <li>A loss function quantifies the difference between the gravitational waveform predicted by the neural model and the reference waveform from the relativistic model.</li>
+        <li>Training is performed using a hybrid strategy: initial optimization with ADAM followed by fine-tuning via BFGS.</li>
+        <li>Callbacks visualize loss convergence and waveform evolution during training.</li>
       </ul>
     </div>
-
-    <!-- Image Section -->
     <div>
-      <img src="/images/elaborate_model_1.jpg" alt="Elaborate Model 1" class="content-image">
-      <img src="/images/elaborate_model_2.jpg" alt="Elaborate Model 2" class="content-image">
+      <img src="/images/optimization_process.jpg" alt="Optimization Process" class="content-image">
     </div>
   </div>
 </div>
 
- 
+## 3. Results and Discussion
+
 <div class="subpart-container">
   <div class="content-row">
-    <!-- Text Section -->
     <div class="content-text">
-      <div class="content-title">Neural Network</div>
+      <div class="content-title">Key Outcomes</div>
       <ul>
-        <li>Used dense neural network of 3 hidden layers; each layer = 64 neurons.</li>
-        <li>Activation function: ReLU; Optimizer: Adam with a learning rate of 0.01.</li>
-        <li>Mean absolute error used for metrics, and the neural network outperformed all models.</li>
+        <li><strong>Enhanced Waveform Prediction:</strong> The neural network-enhanced model accurately reproduces gravitational waveforms with relativistic corrections, outperforming the classical Newtonian prediction.</li>
+        <li><strong>Orbit Trajectory Alignment:</strong> Predicted orbital paths closely match those obtained from the relativistic model, validating our data-driven approach.</li>
+        <li><strong>Forecasting Capability:</strong> Extended simulations demonstrate the model's ability to predict long-term dynamics and waveform evolution.</li>
       </ul>
     </div>
-
-    <!-- Image Section -->
     <div>
-      <img src="/images/neural_network_1.jpg" alt="Neural Network 1" class="content-image">
-      <img src="/images/neural_network_2.jpg" alt="Neural Network 2" class="content-image">
+      <img src="/images/results_waveform.jpg" alt="Waveform Comparison" class="content-image">
     </div>
   </div>
 </div>
 
-## DNN Applied to Transient Heat Diffusion 1D
+## 4. Conclusion and Future Work
 
-### Overview:
 <div class="subpart-container">
   <div class="content-row">
-    <!-- Text Section for What and How -->
     <div class="content-text">
-      <div class="content-title">What?</div>
-      <p>Build a Deep Neural Network to predict temperature evolution in a rod in a 1D transient thermal diffusion case. The rod material has a diffusion coefficient of a = 0.01 m²/s. Initial conditions: center of rod temperature = 400K, rest = 300K.</p>
-
-      <div class="content-title">How?</div>
-      <ul>
-        <li>Defined parameters like length, thermal diffusivity, total simulation time, time steps, and grid points.</li>
-        <li>Defined initial temperature distribution and the diffusion equation matrix using the finite difference method.</li>
-        <li>Developed a Deep Learning model with 2 hidden layers, each containing 128 units with ReLU activation.</li>
-        <li>Tuned the model for well-agreeable accuracy with the calculated temperature distribution.</li>
-      </ul>
+      <p>
+        This project demonstrates that integrating neural networks with differential equation models using SciML in Julia can effectively capture relativistic corrections in black hole dynamics. The resulting model not only enhances gravitational waveform predictions but also offers deeper insights into orbital mechanics under strong gravitational fields.
+      </p>
+      <p>
+        Future work will extend this methodology to binary systems with non-zero mass ratios, incorporate spin effects, and explore more sophisticated neural architectures to capture additional relativistic phenomena.
+      </p>
     </div>
-
-    <!-- Image Section for What and How -->
     <div>
-      <img src="/images/dnn_heat_diffusion_1d_overview_1.jpg" alt="DNN Heat Diffusion 1D Overview 1" class="content-image">
-      <img src="/images/dnn_heat_diffusion_1d_overview_2.jpg" alt="DNN Heat Diffusion 1D Overview 2" class="content-image">
+      <img src="/images/future_work.jpg" alt="Future Work" class="content-image">
     </div>
   </div>
 </div>
-
-## DNN Applied to Transient Heat Diffusion 2D
-
-### Overview:
-<div class="subpart-container">
-  <div class="content-row">
-    <!-- Text Section for What and How -->
-    <div class="content-text">
-      <div class="content-title">What?</div>
-      <p>Build a Deep Neural Network to predict temperature evolution over a square in a 2D transient thermal diffusion case. The surface material has a diffusion coefficient a = 0.01 m²/s. Initial conditions: center temperature = 400K, rest = 300K.</p>
-
-      <div class="content-title">How?</div>
-      <ul>
-        <li>Defined parameters such as the size of the square domain, thermal diffusivity, total simulation time, time steps, and grid points.</li>
-        <li>Defined initial temperature distribution and set up the matrix for solving the diffusion equation using the finite difference method.</li>
-        <li>Developed a Deep Learning model with 2 hidden layers of 128 units each and used ReLU as the activation function.</li>
-        <li>Tuned the model to achieve accurate agreement with the calculated temperature distribution.</li>
-      </ul>
-    </div>
-
-    <!-- Image Section for What and How -->
-    <div>
-      <img src="/images/dnn_heat_diffusion_2d_overview_1.jpg" alt="DNN Heat Diffusion 2D Overview 1" class="content-image">
-      <img src="/images/dnn_heat_diffusion_2d_overview_2.jpg" alt="DNN Heat Diffusion 2D Overview 2" class="content-image">
-    </div>
-  </div>
-</div>
-
-
