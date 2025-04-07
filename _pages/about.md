@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 <!-- Add this div where you want the particle background to appear (typically at the top of your about.md or as a page wrapper)  -->
-<div id="fluid-dynamics-particles" style="position: absolute; width: 33%; height: 200vh; top: 0; left: 0; z-index: -1;"></div>
+<div id="fluid-dynamics-particles" style="position: absolute; width: 33%; height: 300vh; top: 0; left: 0; z-index: -1;"></div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function()  {
       labels: ['CFD', 'Scientific ML', 'Aerodynamics', 'Programming', 'CAD', 'Research'],
       datasets: [{
         label: 'Skill Level',
-        data: [90, 85, 95, 80, 75, 90],
+        data: [90, 75, 95, 70, 90, 90],
         backgroundColor: 'rgba(54, 162, 235, 0.2)',
         borderColor: 'rgba(54, 162, 235, 1)',
         pointBackgroundColor: 'rgba(54, 162, 235, 1)',
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function()  {
             display: true
           },
           suggestedMin: 0,
-          suggestedMax: 100
+          suggestedMax: 60
         }
       }
     }
