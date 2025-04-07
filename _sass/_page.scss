@@ -405,3 +405,61 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+
+/* LATEST Changes */
+/* Add these styles to enhance visual appearance */
+
+.page__content {
+  h2 {
+    border-bottom: 1px solid #f2f3f3;
+    padding-bottom: 0.5em;
+    margin-top: 2em;
+  }
+  
+  a {
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.page__title {
+  margin-top: 0;
+  line-height: 1.2;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.page__lead {
+  font-family: $global-font-family;
+  font-size: $type-size-4;
+  font-style: italic;
+}
+
+
+
+/* Enhance portfolio grid display */
+.grid__item {
+  margin-bottom: 2em;
+  
+  .archive__item-title {
+    margin-top: 0.5em;
+    font-size: $type-size-5;
+  }
+  
+  .archive__item-excerpt {
+    margin-top: 0.5em;
+  }
+  
+  img {
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+}
