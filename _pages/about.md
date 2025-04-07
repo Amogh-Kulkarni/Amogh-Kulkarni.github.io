@@ -7,76 +7,158 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
+<!--
 <!-- Add this div where you want the particle background to appear (typically at the top of your about.md or as a page wrapper)  -->
 <div id="fluid-dynamics-particles" style="position: absolute; width: 33%; height: 300vh; top: 0; left: 0; z-index: -1;"></div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  tsParticles.load("fluid-dynamics-particles", {
+//   tsParticles.load("fluid-dynamics-particles", {
+//     fullScreen: {
+//       enable: false
+//     },
+//     fpsLimit: 60,
+//     particles: {
+//       number: {
+//         value: 80,
+//         density: {
+//           enable: true,
+//           value_area: 800
+//         }
+//       },
+//       color: {
+//         value: ["#4285f4", "#34a853", "#fbbc05", "#ea4335"],
+//         animation: {
+//           enable: true,
+//           speed: 20,
+//           sync: false
+//         }
+//       },
+//       shape: {
+//         type: "circle"
+//       },
+//       opacity: {
+//         value: 0.5,
+//         random: false,
+//         animation: {
+//           enable: true,
+//           speed: 0.5,
+//           minimumValue: 0.1,
+//           sync: false
+//         }
+//       },
+//       size: {
+//         value: 3,
+//         random: true,
+//         animation: {
+//           enable: true,
+//           speed: 2,
+//           minimumValue: 0.1,
+//           sync: false
+//         }
+//       },
+//       links: {
+//         enable: true,
+//         distance: 150,
+//         color: "#4285f4",
+//         opacity: 0.4,
+//         width: 1
+//       },
+//       move: {
+//         enable: true,
+//         speed: 2,
+//         direction: "none",
+//         random: true,
+//         straight: false,
+//         outModes: {
+//           default: "out"
+//         },
+//         attract: {
+//           enable: true,
+//           rotateX: 600,
+//           rotateY: 1200
+//         }
+//       }
+//     },
+//     interactivity: {
+//       detectsOn: "canvas",
+//       events: {
+//         onHover: {
+//           enable: true,
+//           mode: "repulse"
+//         },
+//         onClick: {
+//           enable: true,
+//           mode: "push"
+//         },
+//         resize: true
+//       },
+//       modes: {
+//         repulse: {
+//           distance: 100,
+//           duration: 0.4
+//         },
+//         push: {
+//           quantity: 4
+//         }
+//       }
+//     },
+//     detectRetina: true
+//   });
+// });
+    tsParticles.load("fluid-dynamics-particles", {
     fullScreen: {
       enable: false
     },
-    fpsLimit: 60,
     particles: {
       number: {
-        value: 80,
+        value: 100,
         density: {
           enable: true,
           value_area: 800
         }
       },
       color: {
-        value: ["#4285f4", "#34a853", "#fbbc05", "#ea4335"],
-        animation: {
-          enable: true,
-          speed: 20,
-          sync: false
-        }
+        value: ["#4285f4", "#87CEEB", "#1E90FF", "#00BFFF"],
       },
       shape: {
         type: "circle"
       },
       opacity: {
-        value: 0.5,
-        random: false,
-        animation: {
-          enable: true,
-          speed: 0.5,
-          minimumValue: 0.1,
-          sync: false
-        }
+        value: 0.6,
+        random: true
       },
       size: {
         value: 3,
-        random: true,
-        animation: {
-          enable: true,
-          speed: 2,
-          minimumValue: 0.1,
-          sync: false
-        }
+        random: true
       },
       links: {
         enable: true,
-        distance: 150,
+        distance: 100,
         color: "#4285f4",
-        opacity: 0.4,
+        opacity: 0.2,
         width: 1
       },
       move: {
         enable: true,
-        speed: 2,
+        speed: 3,
         direction: "none",
         random: true,
         straight: false,
         outModes: {
           default: "out"
         },
-        attract: {
+        // This creates the turbulent flow effect
+        path: {
           enable: true,
-          rotateX: 600,
-          rotateY: 1200
+          delay: {
+            value: 0
+          },
+          options: {
+            size: 20,
+            draw: false,
+            generator: "perlinNoise"
+          }
         }
       }
     },
@@ -85,29 +167,27 @@ document.addEventListener('DOMContentLoaded', function() {
       events: {
         onHover: {
           enable: true,
-          mode: "repulse"
+          mode: "bubble"
         },
         onClick: {
           enable: true,
-          mode: "push"
-        },
-        resize: true
+          mode: "repulse"
+        }
       },
       modes: {
-        repulse: {
-          distance: 100,
+        bubble: {
+          distance: 200,
+          size: 6,
           duration: 0.4
         },
-        push: {
-          quantity: 4
+        repulse: {
+          distance: 200,
+          duration: 0.4
         }
       }
-    },
-    detectRetina: true
+    }
   });
-});
 </script>
-
 
 I specialize in Aerodynamics and Computational Fluid Dynamics, holding a Master's from Arizona State University. 
 
@@ -214,10 +294,22 @@ document.addEventListener('DOMContentLoaded', function()  {
             display: true
           },
           suggestedMin: 0,
-          suggestedMax: 60
+          suggestedMax: 50
         }
       }
     }
   });
 });
 </script>
+
+
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 100%);
+  z-index: -1;
+}
