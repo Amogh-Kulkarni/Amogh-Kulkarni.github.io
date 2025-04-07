@@ -17,55 +17,66 @@ document.addEventListener('DOMContentLoaded', function() {
     fullScreen: {
       enable: false
     },
+    fpsLimit: 60,
     particles: {
       number: {
-        value: 100,
+        value: 80,
         density: {
           enable: true,
           value_area: 800
         }
       },
       color: {
-        value: ["#4285f4", "#87CEEB", "#1E90FF", "#00BFFF"],
+        value: ["#4285f4", "#34a853", "#fbbc05", "#ea4335"],
+        animation: {
+          enable: true,
+          speed: 20,
+          sync: false
+        }
       },
       shape: {
         type: "circle"
       },
       opacity: {
-        value: 0.6,
-        random: true
+        value: 0.5,
+        random: false,
+        animation: {
+          enable: true,
+          speed: 0.5,
+          minimumValue: 0.1,
+          sync: false
+        }
       },
       size: {
         value: 3,
-        random: true
+        random: true,
+        animation: {
+          enable: true,
+          speed: 2,
+          minimumValue: 0.1,
+          sync: false
+        }
       },
       links: {
         enable: true,
-        distance: 100,
+        distance: 150,
         color: "#4285f4",
-        opacity: 0.2,
+        opacity: 0.4,
         width: 1
       },
       move: {
         enable: true,
-        speed: 3,
+        speed: 2,
         direction: "none",
         random: true,
         straight: false,
         outModes: {
           default: "out"
         },
-        // This creates the turbulent flow effect
-        path: {
+        attract: {
           enable: true,
-          delay: {
-            value: 0
-          },
-          options: {
-            size: 20,
-            draw: false,
-            generator: "perlinNoise"
-          }
+          rotateX: 600,
+          rotateY: 1200
         }
       }
     },
@@ -74,119 +85,27 @@ document.addEventListener('DOMContentLoaded', function() {
       events: {
         onHover: {
           enable: true,
-          mode: "bubble"
+          mode: "repulse"
         },
         onClick: {
           enable: true,
-          mode: "repulse"
-        }
+          mode: "push"
+        },
+        resize: true
       },
       modes: {
-        bubble: {
-          distance: 200,
-          size: 6,
+        repulse: {
+          distance: 100,
           duration: 0.4
         },
-        repulse: {
-          distance: 200,
-          duration: 0.4
+        push: {
+          quantity: 4
         }
       }
-    }
+    },
+    detectRetina: true
   });
-//   tsParticles.load("fluid-dynamics-particles", {
-//     fullScreen: {
-//       enable: false
-//     },
-//     fpsLimit: 60,
-//     particles: {
-//       number: {
-//         value: 80,
-//         density: {
-//           enable: true,
-//           value_area: 800
-//         }
-//       },
-//       color: {
-//         value: ["#4285f4", "#34a853", "#fbbc05", "#ea4335"],
-//         animation: {
-//           enable: true,
-//           speed: 20,
-//           sync: false
-//         }
-//       },
-//       shape: {
-//         type: "circle"
-//       },
-//       opacity: {
-//         value: 0.5,
-//         random: false,
-//         animation: {
-//           enable: true,
-//           speed: 0.5,
-//           minimumValue: 0.1,
-//           sync: false
-//         }
-//       },
-//       size: {
-//         value: 3,
-//         random: true,
-//         animation: {
-//           enable: true,
-//           speed: 2,
-//           minimumValue: 0.1,
-//           sync: false
-//         }
-//       },
-//       links: {
-//         enable: true,
-//         distance: 150,
-//         color: "#4285f4",
-//         opacity: 0.4,
-//         width: 1
-//       },
-//       move: {
-//         enable: true,
-//         speed: 2,
-//         direction: "none",
-//         random: true,
-//         straight: false,
-//         outModes: {
-//           default: "out"
-//         },
-//         attract: {
-//           enable: true,
-//           rotateX: 600,
-//           rotateY: 1200
-//         }
-//       }
-//     },
-//     interactivity: {
-//       detectsOn: "canvas",
-//       events: {
-//         onHover: {
-//           enable: true,
-//           mode: "repulse"
-//         },
-//         onClick: {
-//           enable: true,
-//           mode: "push"
-//         },
-//         resize: true
-//       },
-//       modes: {
-//         repulse: {
-//           distance: 100,
-//           duration: 0.4
-//         },
-//         push: {
-//           quantity: 4
-//         }
-//       }
-//     },
-//     detectRetina: true
-//   });
-// });
+});
 </script>
 
 I specialize in Aerodynamics and Computational Fluid Dynamics, holding a Master's from Arizona State University. 
