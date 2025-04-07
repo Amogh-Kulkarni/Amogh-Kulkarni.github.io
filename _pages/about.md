@@ -8,6 +8,106 @@ redirect_from:
   - /about.html
 ---
 
+<!-- Add this div where you want the particle background to appear (typically at the top of your about.md or as a page wrapper)  -->
+<div id="fluid-dynamics-particles" style="position: absolute; width: 100%; height: 100vh; top: 0; left: 0; z-index: -1;"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  tsParticles.load("fluid-dynamics-particles", {
+    fullScreen: {
+      enable: false
+    },
+    fpsLimit: 60,
+    particles: {
+      number: {
+        value: 80,
+        density: {
+          enable: true,
+          value_area: 800
+        }
+      },
+      color: {
+        value: ["#4285f4", "#34a853", "#fbbc05", "#ea4335"],
+        animation: {
+          enable: true,
+          speed: 20,
+          sync: false
+        }
+      },
+      shape: {
+        type: "circle"
+      },
+      opacity: {
+        value: 0.5,
+        random: false,
+        animation: {
+          enable: true,
+          speed: 0.5,
+          minimumValue: 0.1,
+          sync: false
+        }
+      },
+      size: {
+        value: 3,
+        random: true,
+        animation: {
+          enable: true,
+          speed: 2,
+          minimumValue: 0.1,
+          sync: false
+        }
+      },
+      links: {
+        enable: true,
+        distance: 150,
+        color: "#4285f4",
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 2,
+        direction: "none",
+        random: true,
+        straight: false,
+        outModes: {
+          default: "out"
+        },
+        attract: {
+          enable: true,
+          rotateX: 600,
+          rotateY: 1200
+        }
+      }
+    },
+    interactivity: {
+      detectsOn: "canvas",
+      events: {
+        onHover: {
+          enable: true,
+          mode: "repulse"
+        },
+        onClick: {
+          enable: true,
+          mode: "push"
+        },
+        resize: true
+      },
+      modes: {
+        repulse: {
+          distance: 100,
+          duration: 0.4
+        },
+        push: {
+          quantity: 4
+        }
+      }
+    },
+    detectRetina: true
+  });
+});
+</script>
+
 
 I specialize in Aerodynamics and Computational Fluid Dynamics, holding a Master's from Arizona State University. 
 
