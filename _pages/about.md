@@ -13,6 +13,87 @@ redirect_from:
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  tsParticles.load("fluid-dynamics-particles", {
+    fullScreen: {
+      enable: false
+    },
+    particles: {
+      number: {
+        value: 100,
+        density: {
+          enable: true,
+          value_area: 800
+        }
+      },
+      color: {
+        value: ["#4285f4", "#87CEEB", "#1E90FF", "#00BFFF"],
+      },
+      shape: {
+        type: "circle"
+      },
+      opacity: {
+        value: 0.6,
+        random: true
+      },
+      size: {
+        value: 3,
+        random: true
+      },
+      links: {
+        enable: true,
+        distance: 100,
+        color: "#4285f4",
+        opacity: 0.2,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 3,
+        direction: "none",
+        random: true,
+        straight: false,
+        outModes: {
+          default: "out"
+        },
+        // This creates the turbulent flow effect
+        path: {
+          enable: true,
+          delay: {
+            value: 0
+          },
+          options: {
+            size: 20,
+            draw: false,
+            generator: "perlinNoise"
+          }
+        }
+      }
+    },
+    interactivity: {
+      detectsOn: "canvas",
+      events: {
+        onHover: {
+          enable: true,
+          mode: "bubble"
+        },
+        onClick: {
+          enable: true,
+          mode: "repulse"
+        }
+      },
+      modes: {
+        bubble: {
+          distance: 200,
+          size: 6,
+          duration: 0.4
+        },
+        repulse: {
+          distance: 200,
+          duration: 0.4
+        }
+      }
+    }
+  });
 //   tsParticles.load("fluid-dynamics-particles", {
 //     fullScreen: {
 //       enable: false
@@ -106,87 +187,6 @@ document.addEventListener('DOMContentLoaded', function() {
 //     detectRetina: true
 //   });
 // });
-    tsParticles.load("fluid-dynamics-particles", {
-    fullScreen: {
-      enable: false
-    },
-    particles: {
-      number: {
-        value: 100,
-        density: {
-          enable: true,
-          value_area: 800
-        }
-      },
-      color: {
-        value: ["#4285f4", "#87CEEB", "#1E90FF", "#00BFFF"],
-      },
-      shape: {
-        type: "circle"
-      },
-      opacity: {
-        value: 0.6,
-        random: true
-      },
-      size: {
-        value: 3,
-        random: true
-      },
-      links: {
-        enable: true,
-        distance: 100,
-        color: "#4285f4",
-        opacity: 0.2,
-        width: 1
-      },
-      move: {
-        enable: true,
-        speed: 3,
-        direction: "none",
-        random: true,
-        straight: false,
-        outModes: {
-          default: "out"
-        },
-        // This creates the turbulent flow effect
-        path: {
-          enable: true,
-          delay: {
-            value: 0
-          },
-          options: {
-            size: 20,
-            draw: false,
-            generator: "perlinNoise"
-          }
-        }
-      }
-    },
-    interactivity: {
-      detectsOn: "canvas",
-      events: {
-        onHover: {
-          enable: true,
-          mode: "bubble"
-        },
-        onClick: {
-          enable: true,
-          mode: "repulse"
-        }
-      },
-      modes: {
-        bubble: {
-          distance: 200,
-          size: 6,
-          duration: 0.4
-        },
-        repulse: {
-          distance: 200,
-          duration: 0.4
-        }
-      }
-    }
-  });
 </script>
 
 I specialize in Aerodynamics and Computational Fluid Dynamics, holding a Master's from Arizona State University. 
@@ -301,15 +301,3 @@ document.addEventListener('DOMContentLoaded', function()  {
   });
 });
 </script>
-
-
-
-.gradient-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 100%);
-  z-index: -1;
-}
