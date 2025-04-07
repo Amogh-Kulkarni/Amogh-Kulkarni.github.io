@@ -79,3 +79,45 @@ My research interest includes rapid aerodynamic prototyping, aerodynamic shape o
     <p>Indian Institute of Science, IISc</p>
   </div>
 </div>
+
+
+<div class="skills-visualization">
+  <h2>Technical Skills</h2>
+  <canvas id="skillsChart" width="400" height="400"></canvas>
+</div>
+
+<!-- adding skill radar map to the landing page--> 
+
+<script>
+document.addEventListener('DOMContentLoaded', function()  {
+  const ctx = document.getElementById('skillsChart').getContext('2d');
+  const skillsChart = new Chart(ctx, {
+    type: 'radar',
+    data: {
+      labels: ['CFD', 'Scientific ML', 'Aerodynamics', 'Programming', 'CAD', 'Research'],
+      datasets: [{
+        label: 'Skill Level',
+        data: [90, 85, 95, 80, 75, 90],
+        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+        borderColor: 'rgba(54, 162, 235, 1)',
+        pointBackgroundColor: 'rgba(54, 162, 235, 1)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgba(54, 162, 235, 1)'
+      }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        r: {
+          angleLines: {
+            display: true
+          },
+          suggestedMin: 0,
+          suggestedMax: 100
+        }
+      }
+    }
+  });
+});
+</script>
