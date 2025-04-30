@@ -10,7 +10,8 @@ collection: portfolio
   }
   .content-row {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* Two columns: text and images */
+    grid-template-columns: 2fr; /* single column for stacked images */
+    /*grid-template-columns: 2fr 1fr; /* Two columns: text and images */
     gap: 20px;
     align-items: center;
     margin-bottom: 20px;
