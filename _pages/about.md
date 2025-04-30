@@ -9,7 +9,7 @@ redirect_from:
 ---
 <!--
 <!-- Add this div where you want the particle background to appear (typically at the top of your about.md or as a page wrapper)  -->
-<div id="fluid-dynamics-particles" style="position: absolute; width: 33%; height: 300vh; top: 0; left: 0; z-index: -1;"></div>
+<!-- <div id="fluid-dynamics-particles" style="position: absolute; width: 33%; height: 300vh; top: 0; left: 0; z-index: -1;"></div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
     detectRetina: true
   });
 });
-</script>
+</script> -->
 
 I specialize in Aerodynamics and Computational Fluid Dynamics, holding a Master's from Arizona State University. 
 
