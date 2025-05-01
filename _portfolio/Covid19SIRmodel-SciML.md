@@ -37,7 +37,8 @@ collection: portfolio
   <div class="content-row">
     <div class="content-text">
       <p>
-        The COVID-19 pandemic highlighted the need for robust, interpretable models that capture the effects of interventions such as quarantine and lockdowns. Traditional SIR models often lack the flexibility to handle complex, time-varying measures. This project enhances the SIR model by integrating a neural network within a Universal Differential Equation (UDE) framework, capturing the dynamic influence of quarantine measures on the epidemic's spread using Italy as a case study. The project aims to answer the following questions:
+        The COVID-19 pandemic highlighted the need for robust, interpretable models that capture the effects of interventions such as quarantine and lockdowns. Traditional SIR models often lack the flexibility to handle complex, time-varying measures. This project enhances the SIR model by integrating a neural network within a Universal Differential Equation (UDE) framework, capturing the dynamic influence of quarantine measures on the epidemic's spread using Italy as a case study. 
+      <div class="content-title">The project aims to answer the following questions:</div>
       </p>
   <ul>
     <li>How different were COVID-19 policies implemented by different countries?</li>
@@ -47,7 +48,7 @@ collection: portfolio
   </ul>
       <p>
 We look  at this project from a quarantine lens, and wheter we can make sciwntific ML driven decision on lockdown, quarantine policies and social distancing.
-What is an SIR model?
+      <div class="content-title">What is an SIR model?</div>
       </p>
     </div>
     <div>
