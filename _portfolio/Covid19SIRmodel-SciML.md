@@ -143,12 +143,14 @@ We look  at this project from a quarantine lens, and wheter we can make sciwntif
 
 After training on Italy data, we evaluated on the full time series and obtained:
 
+<div style="width:50%; margin:1em auto;">
 | Metric | Value |
 | :----- | ----: |
 | **RMSE** | 3 223.78 |
 | **MAE**  | 2 296.41 |
 | **MAPE** | 3.91 % |
 | **R²**   | 0.9919 |
+</div>
 
 These numbers indicate a very close fit between our UDE‐augmented SIR predictions and the ground truth.
 
@@ -167,7 +169,7 @@ These numbers indicate a very close fit between our UDE‐augmented SIR predicti
     <div class="content-text">
       <div class="content-title">Key Outcomes</div>
       <ul>
-        <li><strong>Predictive Accuracy:</strong> The model successfully captures epidemic dynamics, achieving an RMSE of ~7% on key infection predictions.</li>
+        <li><strong>Predictive Accuracy:</strong> The model successfully captures epidemic dynamics, achieving an R² of ~ 0.99 for the fit with ground truth.</li>
         <li><strong>Diagnostic Power:</strong> \( Q(t) \) closely aligns with the timing of Italy's lockdown, confirming its utility as a diagnostic tool.</li>
         <li><strong>Generalizability:</strong> Extended methodology to assess quarantine impacts in over 75 countries, with results publicly hosted at [covid19ml.org](https://covid19ml.org).</li>
       </ul>
