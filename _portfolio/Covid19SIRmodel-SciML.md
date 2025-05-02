@@ -138,6 +138,28 @@ We look  at this project from a quarantine lens, and wheter we can make sciwntif
   </div>
 </div>
 
+
+### 2.5 Model Performance
+
+After training on Italy data, we evaluated on the full time series and obtained:
+
+| Metric | Value |
+| :----- | ----: |
+| **RMSE** | 3 223.78 |
+| **MAE**  | 2 296.41 |
+| **MAPE** | 3.91 % |
+| **R²**   | 0.9919 |
+
+These numbers indicate a very close fit between our UDE‐augmented SIR predictions and the ground truth.
+
+<figure>
+  <video controls width="100%" loop playsinline>
+    <source src="/images/training_overlay_fast.mp4" type="video/mp4">
+    Your browser doesn’t support embedded videos.
+  </video>
+  <figcaption><em>Figure: Animated overlay of ground truth vs. model predictions.</em></figcaption>
+</figure>
+
 ## 3. Results and Discussion
 
 <div class="subpart-container">
@@ -171,7 +193,7 @@ We look  at this project from a quarantine lens, and wheter we can make sciwntif
   </div>
 </div>
 
-## 5. Future Work
+<!-- ## 5. Future Work
 
 <div class="subpart-container">
   <div class="content-row">
@@ -183,4 +205,4 @@ We look  at this project from a quarantine lens, and wheter we can make sciwntif
       </ul>
     </div>
   </div>
-</div>
+</div> -->
