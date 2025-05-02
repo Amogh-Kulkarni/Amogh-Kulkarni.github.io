@@ -143,15 +143,17 @@ We look  at this project from a quarantine lens, and wheter we can make sciwntif
 
 After training on Italy data, we evaluated on the full time series and obtained:
 
-<div style="width:50%; margin:1em auto;">
-| Metric | Value |
-| :----- | ----: |
-| **RMSE** | 3 223.78 |
-| **MAE**  | 2 296.41 |
-| **MAPE** | 3.91 % |
-| **R²**   | 0.9919 |
-</div>
-
+<table style="width:50%; margin:1em auto;">
+  <thead>
+    <tr><th style="text-align:left">Metric</th><th style="text-align:right">Value</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>RMSE</td><td>3 223.78</td></tr>
+    <tr><td>MAE</td><td>2 296.41</td></tr>
+    <tr><td>MAPE</td><td>3.91 %</td></tr>
+    <tr><td>R²</td><td>0.9919</td></tr>
+  </tbody>
+</table>
 These numbers indicate a very close fit between our UDE‐augmented SIR predictions and the ground truth.
 
 <figure>
