@@ -52,8 +52,8 @@ Designing an aircraft wing for transonic flow with an elliptical lift distributi
 
       <div class="content-title">Results</div>
       <ul>
-        <li>Reduced power requirement by 21% for lower RPMs and by 7% for higher RPMs at less than 5% thrust penalty.</li>
-        <li>Built relationships with rapid prototyping manufacturers.</li>
+        <li>Developed an agile workflow to conceptualise wing design for specific design lift and transverse distribution.</li>
+        <li>Designed Sub sritical no-shock wing for transonic application</li>
       </ul>
     </div>
 
