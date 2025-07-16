@@ -80,7 +80,7 @@ We look  at this project from a quarantine lens, and wheter we can make sciwntif
       </p>
     </div>
     <div>
-      <img src="/images/model_equations.jpg" alt="Model Equations" class="content-image">
+      <!-- <img src="/images/model_equations.jpg" alt="Model Equations" class="content-image"> -->
     </div>
   </div>
 </div>
@@ -116,7 +116,7 @@ We look  at this project from a quarantine lens, and wheter we can make sciwntif
       </ul>
     </div>
     <div>
-      <img src="/images/optimization_flow.jpg" alt="Optimization Flow" class="content-image">
+      <!-- <img src="/images/optimization_flow.jpg" alt="Optimization Flow" class="content-image"> -->
     </div>
   </div>
 </div>
@@ -158,7 +158,7 @@ These numbers indicate a very close fit between our UDE‐augmented SIR predicti
 
 <figure>
   <video controls width="100%" loop playsinline>
-    <source src="/images/training_overlay_fast.mp4" type="video/mp4">
+    <source src="/images/training_overlay.mp4" type="video/mp4">
     Your browser doesn’t support embedded videos.
   </video>
   <figcaption><em>Figure: Animated overlay of ground truth vs. model predictions.</em></figcaption>
@@ -177,7 +177,7 @@ These numbers indicate a very close fit between our UDE‐augmented SIR predicti
       </ul>
     </div>
     <div>
-      <img src="/images/prediction_vs_data.jpg" alt="Prediction vs. Data" class="content-image">
+      <img src="/images/final_overlay.jpg" alt="Prediction vs. Data" class="content-image">
     </div>
   </div>
 </div>
@@ -192,7 +192,7 @@ These numbers indicate a very close fit between our UDE‐augmented SIR predicti
       </p>
     </div>
     <div>
-      <img src="/images/model_conclusion.jpg" alt="Model Conclusion" class="content-image">
+      <!-- <img src="/images/model_conclusion.jpg" alt="Model Conclusion" class="content-image"> -->
     </div>
   </div>
 </div>
