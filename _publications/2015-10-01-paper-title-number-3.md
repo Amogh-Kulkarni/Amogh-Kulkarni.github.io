@@ -7,7 +7,7 @@ excerpt: ''
 date: 2025-10-01
 venue: 'AIAA SciTech'
 # slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
-paperurl: '[https://arc.aiaa.org/doi/10.2514/6.2025-2623]'
+paperurl: 'https://arc.aiaa.org/doi/10.2514/6.2025-2623'
 #citation: 'Kulkarni, A., Takahashi, T. "On the Design Implications of Elliptical and Bell-Shaped Lift Distributions," AIAA SciTech 2025-2623, 2025.'
 citation: 'Kulkarni, A., Takahashi, T. (2025). &quot; On the Design Implications of Elliptical and Bell-Shaped Lift Distributions 3.&quot; <i> AIAA SciTech 2025-2623 </i>. 1(3).'
 ---
