@@ -100,8 +100,8 @@ This project aims to utilize data-driven methods, including Linear Regression an
 
       <!-- 2 images side by side after "What?" -->
       <div class="images-two">
-        <img src="/images/linear_regression_overview_1.png" alt="Linear Regression Overview 1" class="content-image">
-        <img src="/images/linear_regression_overview_2.png" alt="Linear Regression Overview 2" class="content-image">
+        <img src="/images/linear_regression_1.png" alt="Linear Regression Overview 1" class="content-image">
+        <img src="/images/linear_regression_2.png" alt="Linear Regression Overview 2" class="content-image">
       </div>
 
       <div class="content-title">How?</div>
@@ -135,10 +135,10 @@ This project aims to utilize data-driven methods, including Linear Regression an
 
       <!-- 4 images in 2x2 grid after "Analytical Model" -->
       <div class="images-four">
-        <img src="/images/analytical_model_1.png" alt="Analytical Model 1" class="content-image">
-        <img src="/images/analytical_model_2.png" alt="Analytical Model 2" class="content-image">
-        <img src="/images/analytical_model_3.png" alt="Analytical Model 3" class="content-image">
-        <img src="/images/analytical_model_4.png" alt="Analytical Model 4" class="content-image">
+        <img src="/images/analytical_model1.png" alt="Analytical Model 1" class="content-image">
+        <img src="/images/analytical_model2.png" alt="Analytical Model 2" class="content-image">
+        <img src="/images/analytical_model3.png" alt="Analytical Model 3" class="content-image">
+        <img src="/images/analytical_model4.png" alt="Analytical Model 4" class="content-image">
       </div>
     </div>
   </div>
@@ -218,9 +218,9 @@ This project aims to utilize data-driven methods, including Linear Regression an
 
       <!-- 3 images stacked vertically after "What?" -->
       <div class="images-three-vertical">
-        <img src="/images/dnn_heat_diffusion_1d_overview_1.png" alt="DNN Heat Diffusion 1D Overview 1" class="content-image">
-        <img src="/images/dnn_heat_diffusion_1d_overview_2.png" alt="DNN Heat Diffusion 1D Overview 2" class="content-image">
-        <img src="/images/dnn_heat_diffusion_1d_overview_3.png" alt="DNN Heat Diffusion 1D Overview 3" class="content-image">
+        <img src="/images/dnn_heat_diff_1d_1.png" alt="DNN Heat Diffusion 1D Overview 1" class="content-image">
+        <img src="/images/dnn_heat_diff_1d_2.png" alt="DNN Heat Diffusion 1D Overview 2" class="content-image">
+        <img src="/images/dnn_heat_diff_1d_3.png" alt="DNN Heat Diffusion 1D Overview 3" class="content-image">
       </div>
 
       <div class="content-title">How?</div>
@@ -252,9 +252,9 @@ This project aims to utilize data-driven methods, including Linear Regression an
       
       <!-- 3 images stacked vertically after "What?" -->
       <div class="images-three-vertical">
-        <img src="/images/dnn_heat_diffusion_2d_overview_1.png" alt="DNN Heat Diffusion 2D Overview 1" class="content-image">
-        <img src="/images/dnn_heat_diffusion_2d_overview_2.png" alt="DNN Heat Diffusion 2D Overview 2" class="content-image">
-        <img src="/images/dnn_heat_diffusion_2d_overview_3.png" alt="DNN Heat Diffusion 2D Overview 3" class="content-image">
+        <img src="/images/dnn_heat_diffusion_2d_1.png" alt="DNN Heat Diffusion 2D Overview 1" class="content-image">
+        <img src="/images/dnn_heat_diffusion_2d_2.png" alt="DNN Heat Diffusion 2D Overview 2" class="content-image">
+        <img src="/images/dnn_heat_diffusion_2d_3.png" alt="DNN Heat Diffusion 2D Overview 3" class="content-image">
       </div>
       
       <div class="content-title">How?</div>
@@ -267,8 +267,8 @@ This project aims to utilize data-driven methods, including Linear Regression an
 
       <!-- 3 images side by side after "How?" -->
       <div class="images-three">
-        <img src="/images/dnn_heat_diffusion_2d_overview_1.png" alt="DNN Heat Diffusion 2D Overview 1" class="content-image">
-        <img src="/images/dnn_heat_diffusion_2d_overview_2.png" alt="DNN Heat Diffusion 2D Overview 2" class="content-image">
+        <img src="/images/dnn_2d_how_1.png" alt="DNN Heat Diffusion 2D Overview 1" class="content-image">
+        <img src="/images/dnn_2d_how_2.png" alt="DNN Heat Diffusion 2D Overview 2" class="content-image">
         <img src="/images/dnn_2d_how_3.png" alt="DNN 2D How 3" class="content-image">
       </div>
     </div>
