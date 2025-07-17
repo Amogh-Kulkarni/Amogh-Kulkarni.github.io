@@ -98,7 +98,7 @@ We look  at this project from a quarantine lens, and wheter we can make sciwntif
       </ul>
     </div>
     <div>
-      <img src="/images/data_preprocessing.jpg" alt="Data Preprocessing" class="content-image">
+      <img src="/images/data_preprocessing.png" alt="Data Preprocessing" class="content-image">
     </div>
   </div>
 </div>
@@ -133,7 +133,7 @@ We look  at this project from a quarantine lens, and wheter we can make sciwntif
       </ul>
     </div>
     <div>
-      <img src="/images/quarantine_strength_plot.jpg" alt="Quarantine Strength \( Q(t) \)" class="content-image">
+      <img src="/images/quarantine_strength_plot.png" alt="Quarantine Strength \( Q(t) \)" class="content-image">
     </div>
   </div>
 </div>
@@ -177,7 +177,7 @@ These numbers indicate a very close fit between our UDE‐augmented SIR predicti
       </ul>
     </div>
     <div>
-      <img src="/images/final_overlay.jpg" alt="Prediction vs. Data" class="content-image">
+      <img src="/images/final_overlay.png" alt="Prediction vs. Data" class="content-image">
     </div>
   </div>
 </div>
