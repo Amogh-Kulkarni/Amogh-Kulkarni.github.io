@@ -47,9 +47,13 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+/* Remove only the right sidebar, keep the left sidebar */
+.sidebar.sticky {
+  display: none !important;
+}
 
-/* Remove sidebar constraints */
-.sidebar {
+/* Or try this alternative - target the sidebar that's empty */
+.sidebar:not(.sidebar__left) {
   display: none !important;
 }
 
@@ -63,7 +67,6 @@
   max-width: 100% !important;
 }
 
-/* Make archive full width */
 .archive {
   padding-right: 0 !important;
 }
