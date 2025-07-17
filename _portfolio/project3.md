@@ -59,10 +59,10 @@ Designing an aircraft wing for transonic flow with an elliptical lift distributi
 
     <!-- Image Section for What, How, and Results -->
     <div>
-      <img src="/images/wing_design_1.jpg" alt="Selected Wing Design" class="content-image">
-      <img src="/images/wing_design_2.jpg" alt="Wing Sections" class="content-image">
-      <img src="/images/wing_design_3.jpg" alt="Lift Distribution" class="content-image">
-      <img src="/images/wing_design_4.jpg" alt="Pressure Distribution" class="content-image">
+      <img src="/images/wing_design1.png" alt="Selected Wing Design" class="content-image">
+      <img src="/images/wing_design2.png" alt="Wing Sections" class="content-image">
+      <img src="/images/wing_design3.png" alt="Lift Distribution" class="content-image">
+      <img src="/images/wing_design4.png" alt="Pressure Distribution" class="content-image">
     </div>
   </div>
 </div>
