@@ -47,4 +47,31 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+/* Remove right sidebar space and make content use full available width */
+.archive {
+  width: 100% !important;
+  padding-right: 0 !important;
+}
 
+.archive .list__item {
+  width: 100% !important;
+}
+
+/* On larger screens, adjust the layout to use the full width */
+@media (min-width: 80em) {
+  .archive {
+    width: 100% !important;
+    padding-right: 0 !important;
+  }
+  
+  .page__content {
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+}
+
+/* Make sure the main content area uses full width */
+.page__content {
+  margin-right: 0 !important;
+  max-width: 100% !important;
+}
