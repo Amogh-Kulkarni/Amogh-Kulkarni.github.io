@@ -1,6 +1,6 @@
 ---
 title: "Data-Driven Methods for Temperature Prediction"
-excerpt: "Using machine learning methods such as Linear Regression and Neural Networks to predict temperature in heat transfer applications.<br/><img src='/images/temperature_prediction_thumbnail.jpg'>"
+excerpt: "Using machine learning methods such as Linear Regression and Neural Networks to predict temperature in heat transfer applications.<br/><img src='/images/temperature_prediction_thumbnail.png'>"
 collection: portfolio
 ---
 
@@ -28,6 +28,61 @@ collection: portfolio
     font-weight: bold;
     margin-bottom: 10px;
   }
+  /* Four images in a 2x2 grid */
+  .images-four {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  /* Three images side by side */
+  .images-three {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  /* Three images stacked vertically */
+  .images-three-vertical {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  /* Two images side by side */
+  .images-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  /* Single image */
+  .images-one {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .images-four {
+      grid-template-columns: 1fr;
+    }
+    .images-three {
+      grid-template-columns: 1fr;
+    }
+    .images-two {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .images-three {
+      grid-template-columns: 1fr 1fr;
+    }
+    .images-four {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 </style>
 
 
@@ -43,6 +98,12 @@ This project aims to utilize data-driven methods, including Linear Regression an
       <div class="content-title">What?</div>
       <p>Build a model based on Linear Regression and Neural Networks to predict the heat transfer coefficient using data simulated with OpenFOAM. The model involves openfoam simulations for different physical features (u, rho, lambda, Cp).</p>
 
+      <!-- 2 images side by side after "What?" -->
+      <div class="images-two">
+        <img src="/images/linear_regression_overview_1.png" alt="Linear Regression Overview 1" class="content-image">
+        <img src="/images/linear_regression_overview_2.png" alt="Linear Regression Overview 2" class="content-image">
+      </div>
+
       <div class="content-title">How?</div>
       <ul>
         <li>Dimensionless parameters (Re, Pr, Nu) were used to reduce the study to find Nu number.</li>
@@ -51,12 +112,12 @@ This project aims to utilize data-driven methods, including Linear Regression an
         <li>Plotted Nu correlation parity plots to evaluate data accuracy.</li>
         <li>Developed and compared analytical, linear regression, and neural network models to assess the accuracy and parity of Nu number predictions.</li>
       </ul>
-    </div>
 
-    <!-- Image Section for What and How -->
-    <div>
-      <img src="/images/linear_regression_overview_1.jpg" alt="Linear Regression Overview 1" class="content-image">
-      <img src="/images/linear_regression_overview_2.jpg" alt="Linear Regression Overview 2" class="content-image">
+      <!-- 2 images side by side after "How?" -->
+      <div class="images-two">
+        <img src="/images/how_method_1.png" alt="How Method 1" class="content-image">
+        <img src="/images/how_method_2.png" alt="How Method 2" class="content-image">
+      </div>
     </div>
   </div>
 </div>
@@ -71,12 +132,14 @@ This project aims to utilize data-driven methods, including Linear Regression an
         <li>Pre-processed and cleaned CFD results.</li>
         <li>Calculated Re, Pr, Nu from CFD data and plotted Re, Pr, Nu as functions of each other.</li>
       </ul>
-    </div>
 
-    <!-- Image Section -->
-    <div>
-      <img src="/images/analytical_model_1.jpg" alt="Analytical Model 1" class="content-image">
-      <img src="/images/analytical_model_2.jpg" alt="Analytical Model 2" class="content-image">
+      <!-- 4 images in 2x2 grid after "Analytical Model" -->
+      <div class="images-four">
+        <img src="/images/analytical_model_1.png" alt="Analytical Model 1" class="content-image">
+        <img src="/images/analytical_model_2.png" alt="Analytical Model 2" class="content-image">
+        <img src="/images/analytical_model_3.png" alt="Analytical Model 3" class="content-image">
+        <img src="/images/analytical_model_4.png" alt="Analytical Model 4" class="content-image">
+      </div>
     </div>
   </div>
 </div>
@@ -92,12 +155,11 @@ This project aims to utilize data-driven methods, including Linear Regression an
         <li>Trained using the training data.</li>
         <li>Parity plots showed poor r² performance and high error.</li>
       </ul>
-    </div>
 
-    <!-- Image Section -->
-    <div>
-      <img src="/images/naive_linear_regression_1.jpg" alt="Naive Linear Regression 1" class="content-image">
-      <img src="/images/naive_linear_regression_2.jpg" alt="Naive Linear Regression 2" class="content-image">
+      <!-- 1 image after "Naive Linear Regression" -->
+      <div class="images-one">
+        <img src="/images/naive_linear_regression_1.png" alt="Naive Linear Regression 1" class="content-image">
+      </div>
     </div>
   </div>
 </div>
@@ -112,12 +174,13 @@ This project aims to utilize data-driven methods, including Linear Regression an
         <li>Used empirical coefficients C<sub>n,m</sub> to approximate Nu values.</li>
         <li>The elaborate model showed acceptable Nu correlation parity (in pink).</li>
       </ul>
-    </div>
 
-    <!-- Image Section -->
-    <div>
-      <img src="/images/elaborate_model_1.jpg" alt="Elaborate Model 1" class="content-image">
-      <img src="/images/elaborate_model_2.jpg" alt="Elaborate Model 2" class="content-image">
+      <!-- 3 images side by side after "Elaborate Model" -->
+      <div class="images-three">
+        <img src="/images/elaborate_model_1.png" alt="Elaborate Model 1" class="content-image">
+        <img src="/images/elaborate_model_2.png" alt="Elaborate Model 2" class="content-image">
+        <img src="/images/elaborate_model_3.png" alt="Elaborate Model 3" class="content-image">
+      </div>
     </div>
   </div>
 </div>
@@ -133,12 +196,12 @@ This project aims to utilize data-driven methods, including Linear Regression an
         <li>Activation function: ReLU; Optimizer: Adam with a learning rate of 0.01.</li>
         <li>Mean absolute error used for metrics, and the neural network outperformed all models.</li>
       </ul>
-    </div>
 
-    <!-- Image Section -->
-    <div>
-      <img src="/images/neural_network_1.jpg" alt="Neural Network 1" class="content-image">
-      <img src="/images/neural_network_2.jpg" alt="Neural Network 2" class="content-image">
+      <!-- 2 images side by side after "Neural Network" -->
+      <div class="images-two">
+        <img src="/images/neural_network_1.png" alt="Neural Network 1" class="content-image">
+        <img src="/images/neural_network_2.png" alt="Neural Network 2" class="content-image">
+      </div>
     </div>
   </div>
 </div>
@@ -153,6 +216,13 @@ This project aims to utilize data-driven methods, including Linear Regression an
       <div class="content-title">What?</div>
       <p>Build a Deep Neural Network to predict temperature evolution in a rod in a 1D transient thermal diffusion case. The rod material has a diffusion coefficient of a = 0.01 m²/s. Initial conditions: center of rod temperature = 400K, rest = 300K.</p>
 
+      <!-- 3 images stacked vertically after "What?" -->
+      <div class="images-three-vertical">
+        <img src="/images/dnn_heat_diffusion_1d_overview_1.png" alt="DNN Heat Diffusion 1D Overview 1" class="content-image">
+        <img src="/images/dnn_heat_diffusion_1d_overview_2.png" alt="DNN Heat Diffusion 1D Overview 2" class="content-image">
+        <img src="/images/dnn_heat_diffusion_1d_overview_3.png" alt="DNN Heat Diffusion 1D Overview 3" class="content-image">
+      </div>
+
       <div class="content-title">How?</div>
       <ul>
         <li>Defined parameters like length, thermal diffusivity, total simulation time, time steps, and grid points.</li>
@@ -160,12 +230,12 @@ This project aims to utilize data-driven methods, including Linear Regression an
         <li>Developed a Deep Learning model with 2 hidden layers, each containing 128 units with ReLU activation.</li>
         <li>Tuned the model for well-agreeable accuracy with the calculated temperature distribution.</li>
       </ul>
-    </div>
 
-    <!-- Image Section for What and How -->
-    <div>
-      <img src="/images/dnn_heat_diffusion_1d_overview_1.jpg" alt="DNN Heat Diffusion 1D Overview 1" class="content-image">
-      <img src="/images/dnn_heat_diffusion_1d_overview_2.jpg" alt="DNN Heat Diffusion 1D Overview 2" class="content-image">
+      <!-- 2 images side by side after "How?" -->
+      <div class="images-two">
+        <img src="/images/dnn_1d_how_1.png" alt="DNN 1D How 1" class="content-image">
+        <img src="/images/dnn_1d_how_2.png" alt="DNN 1D How 2" class="content-image">
+      </div>
     </div>
   </div>
 </div>
@@ -179,7 +249,14 @@ This project aims to utilize data-driven methods, including Linear Regression an
     <div class="content-text">
       <div class="content-title">What?</div>
       <p>Build a Deep Neural Network to predict temperature evolution over a square in a 2D transient thermal diffusion case. The surface material has a diffusion coefficient a = 0.01 m²/s. Initial conditions: center temperature = 400K, rest = 300K.</p>
-
+      
+      <!-- 3 images stacked vertically after "What?" -->
+      <div class="images-three-vertical">
+        <img src="/images/dnn_heat_diffusion_2d_overview_1.png" alt="DNN Heat Diffusion 2D Overview 1" class="content-image">
+        <img src="/images/dnn_heat_diffusion_2d_overview_2.png" alt="DNN Heat Diffusion 2D Overview 2" class="content-image">
+        <img src="/images/dnn_heat_diffusion_2d_overview_3.png" alt="DNN Heat Diffusion 2D Overview 3" class="content-image">
+      </div>
+      
       <div class="content-title">How?</div>
       <ul>
         <li>Defined parameters such as the size of the square domain, thermal diffusivity, total simulation time, time steps, and grid points.</li>
@@ -187,12 +264,13 @@ This project aims to utilize data-driven methods, including Linear Regression an
         <li>Developed a Deep Learning model with 2 hidden layers of 128 units each and used ReLU as the activation function.</li>
         <li>Tuned the model to achieve accurate agreement with the calculated temperature distribution.</li>
       </ul>
-    </div>
 
-    <!-- Image Section for What and How -->
-    <div>
-      <img src="/images/dnn_heat_diffusion_2d_overview_1.jpg" alt="DNN Heat Diffusion 2D Overview 1" class="content-image">
-      <img src="/images/dnn_heat_diffusion_2d_overview_2.jpg" alt="DNN Heat Diffusion 2D Overview 2" class="content-image">
+      <!-- 3 images side by side after "How?" -->
+      <div class="images-three">
+        <img src="/images/dnn_heat_diffusion_2d_overview_1.png" alt="DNN Heat Diffusion 2D Overview 1" class="content-image">
+        <img src="/images/dnn_heat_diffusion_2d_overview_2.png" alt="DNN Heat Diffusion 2D Overview 2" class="content-image">
+        <img src="/images/dnn_2d_how_3.png" alt="DNN 2D How 3" class="content-image">
+      </div>
     </div>
   </div>
 </div>
