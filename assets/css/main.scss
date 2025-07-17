@@ -1,5 +1,6 @@
 ---
 ---
+
 /*
  *    Minimal Mistakes Jekyll Theme
  *
@@ -7,13 +8,16 @@
  *  - mademistakes.com
  *  - https://twitter.com/mmistakes
  *
-/
+*/
+
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
 @import "mixins";
 @import "vendor/susy/susy";
+
 @import "reset";
 @import "base";
+
 @import "utilities";
 @import "animations";
 @import "tables";
@@ -23,17 +27,24 @@
 @import "navigation";
 @import "footer";
 @import "syntax";
+
 @import "forms";
+
 @import "page";
 @import "archive";
 @import "sidebar";
+
 @import "vendor/font-awesome/fontawesome";
+
 .container {
-  max-width: 1200px; / or another suitable width */
+  max-width: 1200px; /* or another suitable width */
   margin: 0 auto;
   padding: 0 1rem;
 }
+
 @import "vendor/font-awesome/solid";
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+
