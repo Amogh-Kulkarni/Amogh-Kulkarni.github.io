@@ -46,3 +46,18 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+
+.page__content,
+.archive,
+.layout--single .page__content,
+.layout--archive .page__content {
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Remove sidebar constraints */
+.page {
+  width: 100% !important;
+}
