@@ -46,38 +46,3 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
-
-/* Remove only the right sidebar, keep the left sidebar */
-.sidebar.sticky {
-  display: none !important;
-}
-
-/* Or try this alternative - target the sidebar that's empty */
-.sidebar:not(.sidebar__left) {
-  display: none !important;
-}
-
-.page {
-  width: 100% !important;
-  padding-right: 0 !important;
-}
-
-.page__content {
-  margin-right: 0 !important;
-  max-width: 100% !important;
-}
-
-.archive {
-  padding-right: 0 !important;
-}
-
-@media (min-width: 80em) {
-  .page {
-    width: 100% !important;
-    padding-right: 0 !important;
-  }
-  
-  .page__content {
-    margin-right: 0 !important;
-  }
-}
