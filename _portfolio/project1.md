@@ -74,8 +74,8 @@ This project involves the 3D modeling and experimental analysis of a baseline sm
       
       <!-- 2 images side by side after "What?" -->
       <div class="images-two">
-        <img src="/images/propeller1_full.jpg" alt="Baseline Propeller" class="content-image">
-        <img src="/images/propeller1_modified.jpg" alt="Modified Propeller with Tubercules" class="content-image">
+        <img src="/images/propeller1_full.png" alt="Baseline Propeller" class="content-image">
+        <img src="/images/propeller1_modified.png" alt="Modified Propeller with Tubercules" class="content-image">
       </div>
       
       <div class="content-title">How?</div>
@@ -87,8 +87,8 @@ This project involves the 3D modeling and experimental analysis of a baseline sm
       
       <!-- 2 images side by side after "How?" -->
       <div class="images-two">
-        <img src="/images/test_rig_setup.jpg" alt="Test Rig Setup" class="content-image">
-        <img src="/images/wind_tunnel_experiment.jpg" alt="Wind Tunnel Experiment" class="content-image">
+        <img src="/images/test_rig_setup.png" alt="Test Rig Setup" class="content-image">
+        <img src="/images/wind_tunnel_experiment.png" alt="Wind Tunnel Experiment" class="content-image">
       </div>
       
       <div class="content-title">Results</div>
@@ -99,7 +99,7 @@ This project involves the 3D modeling and experimental analysis of a baseline sm
       
       <!-- 1 image after "Results" -->
       <div class="images-one">
-        <img src="/images/performance_results.jpg" alt="Performance Results Chart" class="content-image">
+        <img src="/images/performance_results.png" alt="Performance Results Chart" class="content-image">
       </div>
     </div>
   </div>
