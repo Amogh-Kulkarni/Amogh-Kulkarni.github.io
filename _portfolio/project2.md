@@ -75,9 +75,9 @@ This project aims to study wave drag reduction by varying the leading edge shape
       
       <!-- 3 images side by side after "What?" -->
       <div class="images-three">
-        <img src="/images/cascade_fins_full.jpg" alt="Cascade Fins Full View" class="content-image">
-        <img src="/images/cascade_fins_thin.jpg" alt="Cascade Fins Simulation" class="content-image">
-        <img src="/images/cascade_fins_thick.jpg" alt="Leading Edge Variations" class="content-image">
+        <img src="/images/cascade_fins_full.png" alt="Cascade Fins Full View" class="content-image">
+        <img src="/images/cascade_fins_thin.png" alt="Cascade Fins Simulation" class="content-image">
+        <img src="/images/cascade_fins_thick.png" alt="Leading Edge Variations" class="content-image">
       </div>
       
       <div class="content-title">How?</div>
@@ -89,8 +89,8 @@ This project aims to study wave drag reduction by varying the leading edge shape
       
       <!-- 2 images side by side after "How?" -->
       <div class="images-two">
-        <img src="/images/cfd_flat_plate.jpg" alt="CFD Setup" class="content-image">
-        <img src="/images/cfd_sharp.jpg" alt="Simulation Results" class="content-image">
+        <img src="/images/cfd_flat_plate.png" alt="CFD Setup" class="content-image">
+        <img src="/images/cfd_sharp.png" alt="Simulation Results" class="content-image">
       </div>
       
       <div class="content-title">Results</div>
@@ -101,7 +101,7 @@ This project aims to study wave drag reduction by varying the leading edge shape
       
       <!-- 1 image after "Results" -->
       <div class="images-one">
-        <img src="/images/results_le.jpg" alt="Performance Comparison" class="content-image">
+        <img src="/images/results_le.png" alt="Performance Comparison" class="content-image">
       </div>
     </div>
   </div>
