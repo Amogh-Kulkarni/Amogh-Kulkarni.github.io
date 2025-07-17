@@ -134,7 +134,7 @@ collection: portfolio
       </p>
     </div>
     <div>
-      <img src="/images/future_work.jpg" alt="Future Work" class="content-image">
+      <!-- <img src="/images/future_work.jpg" alt="Future Work" class="content-image"> -->
     </div>
   </div>
 </div>
