@@ -214,7 +214,165 @@ layout: compress
                 /* Smooth transitions */
                 body.dark-mode * {
                   transition: background-color 0.3s ease, color 0.3s ease !important;
-                }         
+                }    
+
+                        /* Radar Chart Dark Mode Text Fixes */
+
+                  /* General radar chart containers */
+                  body.dark-mode .radar-chart,
+                  body.dark-mode .skill-radar,
+                  body.dark-mode .skills-radar,
+                  body.dark-mode .radar-container {
+                    color: #ffffff !important;
+                  }
+                  
+                  /* SVG text elements in radar charts */
+                  body.dark-mode .radar-chart svg text,
+                  body.dark-mode .skill-radar svg text,
+                  body.dark-mode .skills-radar svg text,
+                  body.dark-mode svg .radar-text,
+                  body.dark-mode svg text {
+                    fill: #ffffff !important;
+                    color: #ffffff !important;
+                  }
+                  
+                  /* Chart.js radar chart text */
+                  body.dark-mode .chartjs-render-monitor text,
+                  body.dark-mode canvas + div text,
+                  body.dark-mode .chart-container text {
+                    color: #ffffff !important;
+                  }
+                  
+                  /* D3.js radar chart elements */
+                  body.dark-mode .d3-radar text,
+                  body.dark-mode .d3-radar .axis text,
+                  body.dark-mode .d3-radar .legend text,
+                  body.dark-mode .radar-chart .axis text,
+                  body.dark-mode .radar-chart .legend text {
+                    fill: #ffffff !important;
+                  }
+                  
+                  /* Radar chart labels and legends */
+                  body.dark-mode .radar-label,
+                  body.dark-mode .radar-legend,
+                  body.dark-mode .skill-label,
+                  body.dark-mode .chart-label,
+                  body.dark-mode .chart-legend {
+                    color: #ffffff !important;
+                  }
+                  
+                  /* Axis labels and tick labels */
+                  body.dark-mode .radar-axis-label,
+                  body.dark-mode .axis-label,
+                  body.dark-mode .tick-label,
+                  body.dark-mode .radar-tick {
+                    color: #ffffff !important;
+                    fill: #ffffff !important;
+                  }
+                  
+                  /* Skill names and values */
+                  body.dark-mode .skill-name,
+                  body.dark-mode .skill-value,
+                  body.dark-mode .radar-skill-name,
+                  body.dark-mode .radar-skill-value {
+                    color: #ffffff !important;
+                  }
+                  
+                  /* Canvas-based charts (if using canvas) */
+                  body.dark-mode canvas {
+                    filter: none !important;
+                  }
+                  
+                  /* Plotly.js radar charts */
+                  body.dark-mode .plotly .gtitle,
+                  body.dark-mode .plotly .xtitle,
+                  body.dark-mode .plotly .ytitle,
+                  body.dark-mode .plotly .legend,
+                  body.dark-mode .plotly text {
+                    fill: #ffffff !important;
+                    color: #ffffff !important;
+                  }
+                  
+                  /* ApexCharts radar charts */
+                  body.dark-mode .apexcharts-text,
+                  body.dark-mode .apexcharts-legend-text,
+                  body.dark-mode .apexcharts-datalabel,
+                  body.dark-mode .apexcharts-xaxis-label,
+                  body.dark-mode .apexcharts-yaxis-label {
+                    fill: #ffffff !important;
+                  }
+                  
+                  /* Highcharts radar charts */
+                  body.dark-mode .highcharts-text,
+                  body.dark-mode .highcharts-legend-item text,
+                  body.dark-mode .highcharts-axis-labels text,
+                  body.dark-mode .highcharts-data-labels text {
+                    fill: #ffffff !important;
+                  }
+                  
+                  /* Custom radar implementations */
+                  body.dark-mode .radar .text,
+                  body.dark-mode .radar-text,
+                  body.dark-mode .skill-text,
+                  body.dark-mode .chart-text {
+                    color: #ffffff !important;
+                    fill: #ffffff !important;
+                  }
+                  
+                  /* Ensure radar chart backgrounds are transparent or black */
+                  body.dark-mode .radar-chart,
+                  body.dark-mode .skill-radar,
+                  body.dark-mode .radar-container {
+                    background-color: transparent !important;
+                  }
+                  
+                  /* Fix any white backgrounds in radar charts */
+                  body.dark-mode .radar-chart svg,
+                  body.dark-mode .skill-radar svg {
+                    background-color: transparent !important;
+                  }
+                  
+                  /* Radar chart grid lines (optional - make them lighter) */
+                  body.dark-mode .radar-chart .grid-line,
+                  body.dark-mode .radar-grid,
+                  body.dark-mode .radar-axis {
+                    stroke: #444444 !important;
+                  }
+                  
+                  /* Specific targeting for common radar chart libraries */
+                  
+                  /* Chart.js specific */
+                  body.dark-mode .chartjs-render-monitor {
+                    background-color: transparent !important;
+                  }
+                  
+                  /* D3.js specific */
+                  body.dark-mode .d3-radar .axis line,
+                  body.dark-mode .d3-radar .axis path {
+                    stroke: #444444 !important;
+                  }
+                  
+                  /* Ensure all text in chart containers is white */
+                  body.dark-mode [class*="chart"] text,
+                  body.dark-mode [class*="radar"] text,
+                  body.dark-mode [class*="skill"] text {
+                    color: #ffffff !important;
+                    fill: #ffffff !important;
+                  }
+                  
+                  /* Force override for stubborn elements */
+                  body.dark-mode * [fill="#000000"],
+                  body.dark-mode * [fill="#000"],
+                  body.dark-mode * [fill="black"] {
+                    fill: #ffffff !important;
+                  }
+                  
+                  body.dark-mode * [color="#000000"],
+                  body.dark-mode * [color="#000"],
+                  body.dark-mode * [color="black"] {
+                    color: #ffffff !important;
+                  }
+      
       /* Make container full-width */
       .container,
       .wrapper,
