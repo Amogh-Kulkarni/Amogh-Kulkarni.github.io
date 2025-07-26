@@ -9,6 +9,7 @@ layout: compress
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
       <!-- Google tag (gtag.js) -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-M54YDR8RH7"></script>
       <script>
@@ -21,6 +22,159 @@ layout: compress
       <!-- End Google Analytics code -->
     <!-- Add your custom styles here -->
     <style>
+        /* Dark Mode Toggle Button Styles */
+        .theme-toggle {
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          z-index: 1000;
+          background: transparent;
+          border: 2px solid #333;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease;
+          font-size: 20px;
+          color: #333;
+        }
+        
+        .theme-toggle:hover {
+          background: #333;
+          color: #fff;
+          transform: scale(1.1);
+        }
+        
+        /* Dark Mode Styles */
+        body.dark-mode {
+          background-color: #1a1a1a !important;
+          color: #e0e0e0 !important;
+        }
+        
+        body.dark-mode .masthead {
+          background-color: #2d2d2d !important;
+          border-bottom: 1px solid #444 !important;
+        }
+        
+        body.dark-mode .masthead__inner-wrap {
+          background-color: #2d2d2d !important;
+        }
+        
+        body.dark-mode .greedy-nav {
+          background-color: #2d2d2d !important;
+        }
+        
+        body.dark-mode .greedy-nav a {
+          color: #e0e0e0 !important;
+        }
+        
+        body.dark-mode .greedy-nav a:hover {
+          color: #fff !important;
+        }
+        
+        body.dark-mode .page__content {
+          background-color: #1a1a1a !important;
+          color: #e0e0e0 !important;
+        }
+        
+        body.dark-mode .page__title {
+          color: #fff !important;
+        }
+        
+        body.dark-mode .archive__item-title {
+          color: #fff !important;
+        }
+        
+        body.dark-mode .archive__item-excerpt {
+          color: #ccc !important;
+        }
+        
+        body.dark-mode .sidebar {
+          background-color: #2d2d2d !important;
+          color: #e0e0e0 !important;
+        }
+        
+        body.dark-mode .author__avatar img {
+          border: 3px solid #444 !important;
+        }
+        
+        body.dark-mode .author__content h3 {
+          color: #fff !important;
+        }
+        
+        body.dark-mode .author__bio {
+          color: #ccc !important;
+        }
+        
+        body.dark-mode .author__urls {
+          color: #ccc !important;
+        }
+        
+        body.dark-mode .author__urls a {
+          color: #e0e0e0 !important;
+        }
+        
+        body.dark-mode .author__urls a:hover {
+          color: #fff !important;
+        }
+        
+        body.dark-mode .page__footer {
+          background-color: #2d2d2d !important;
+          color: #ccc !important;
+          border-top: 1px solid #444 !important;
+        }
+        
+        body.dark-mode .page__footer-copyright {
+          color: #ccc !important;
+        }
+        
+        /* Dark mode toggle button adjustments for dark mode */
+        body.dark-mode .theme-toggle {
+          border-color: #e0e0e0;
+          color: #e0e0e0;
+        }
+        
+        body.dark-mode .theme-toggle:hover {
+          background: #e0e0e0;
+          color: #1a1a1a;
+        }
+        
+        /* Additional dark mode styles for academic content */
+        body.dark-mode .archive__item {
+          border-bottom: 1px solid #444 !important;
+        }
+        
+        body.dark-mode .list__item {
+          border-bottom: 1px solid #444 !important;
+        }
+        
+        body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, 
+        body.dark-mode h4, body.dark-mode h5, body.dark-mode h6 {
+          color: #fff !important;
+        }
+        
+        body.dark-mode a {
+          color: #66b3ff !important;
+        }
+        
+        body.dark-mode a:hover {
+          color: #99ccff !important;
+        }
+        
+        body.dark-mode .btn {
+          background-color: #444 !important;
+          color: #e0e0e0 !important;
+          border: 1px solid #666 !important;
+        }
+        
+        body.dark-mode .btn:hover {
+          background-color: #555 !important;
+          color: #fff !important;
+        }
+    
       /* Make container full-width */
       .container,
       .wrapper,
@@ -40,7 +194,10 @@ layout: compress
   </head>
 
   <body>
-
+        <!-- Dark mode toggle button -->
+    <button id="theme-toggle" class="theme-toggle">
+      <i class="fas fa-moon"></i>
+    </button>
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
@@ -77,6 +234,21 @@ layout: compress
     </script> -->
     
     {% include scripts.html %}
-
+        <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const toggleButton = document.getElementById('theme-toggle');
+      const currentTheme = localStorage.getItem('theme') || 'light';
+      
+      if (currentTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+      }
+      
+      toggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+        localStorage.setItem('theme', theme);
+      });
+    });
+    </script>
   </body>
 </html>
