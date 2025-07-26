@@ -22,33 +22,43 @@ layout: compress
       <!-- End Google Analytics code -->
     <!-- Add your custom styles here -->
     <style>
-          /* Dark Mode Toggle Button Styles */
+                    /* Dark Mode Toggle Button Styles */
+          /* ===== REFERENCE-BASED DARK MODE IMPLEMENTATION ===== */
+          
+          /* Dark Mode Toggle Button Styling */
           .theme-toggle {
             position: fixed;
             top: 20px;
             right: 20px;
-            z-index: 1000;
-            background: transparent;
-            border: 2px solid #333;
+            background-color: transparent;
+            border: 2px solid #0066cc;
             border-radius: 50%;
             width: 50px;
             height: 50px;
             cursor: pointer;
+            z-index: 1000;
             display: flex;
             align-items: center;
             justify-content: center;
             transition: all 0.3s ease;
-            font-size: 20px;
-            color: #333;
           }
           
           .theme-toggle:hover {
-            background: #333;
-            color: #fff;
-            transform: scale(1.1);
+            background-color: #0066cc;
+            color: #ffffff;
           }
           
-          /* Mobile-specific positioning for toggle button */
+          .theme-toggle i {
+            font-size: 20px;
+            color: #0066cc;
+            transition: color 0.3s ease;
+          }
+          
+          .theme-toggle:hover i {
+            color: #ffffff;
+          }
+          
+          /* Mobile positioning for toggle button */
           @media (max-width: 768px) {
             .theme-toggle {
               top: auto;
@@ -56,126 +66,60 @@ layout: compress
               right: 20px;
               width: 45px;
               height: 45px;
+            }
+            
+            .theme-toggle i {
               font-size: 18px;
             }
           }
           
-          /* Dark Mode Styles - Homogeneous Black Background */
+          /* ===== DARK MODE COLOR SCHEME (Reference Site Strategy) ===== */
+          
+          /* Body - Very Dark Background (matches reference site) */
           body.dark-mode {
-            background-color: #000000 !important;
-            color: #e0e0e0 !important;
+            background-color: rgb(3, 3, 3) !important;
+            color: #ffffff !important;
+            transition: background-color 0.3s ease, color 0.3s ease;
           }
           
-          /* Main page wrapper - Black background */
-          body.dark-mode .page {
-            background-color: #000000 !important;
-          }
-          
-          body.dark-mode .initial-content {
-            background-color: #000000 !important;
-          }
-          
-          body.dark-mode .layout--single {
-            background-color: #000000 !important;
-          }
-          
-          /* Top Navigation Bar - White Background in Dark Mode */
-          body.dark-mode .masthead {
-            background-color: #ffffff !important;
-            border-bottom: 1px solid #ddd !important;
-          }
-          
-          body.dark-mode .masthead__inner-wrap {
-            background-color: #ffffff !important;
-          }
-          
+          /* Navigation Bar - White Background (matches reference site) */
+          body.dark-mode .masthead,
           body.dark-mode .greedy-nav {
             background-color: #ffffff !important;
+            color: #333333 !important;
           }
           
-          /* Navigation Links - Blue Color */
-          body.dark-mode .greedy-nav a {
+          /* Navigation Links - Blue Color (matches reference site) */
+          body.dark-mode .greedy-nav a,
+          body.dark-mode .masthead a {
             color: #0066cc !important;
           }
           
-          body.dark-mode .greedy-nav a:hover {
+          body.dark-mode .greedy-nav a:hover,
+          body.dark-mode .masthead a:hover {
             color: #004499 !important;
           }
           
-          /* Site Title/Name - Blue Color */
-          body.dark-mode .site-title {
-            color: #0066cc !important;
-          }
-          
-          body.dark-mode .site-title:hover {
-            color: #004499 !important;
-          }
-          
-          /* Fix overlapping header rows - Make secondary header black */
-          body.dark-mode .page__hero {
-            background-color: #000000 !important;
-          }
-          
-          body.dark-mode .page__hero-wrap {
-            background-color: #000000 !important;
-          }
-          
-          body.dark-mode .page__lead {
-            background-color: #000000 !important;
-            color: #e0e0e0 !important;
-          }
-          
-          /* Main Content Area - Black Background */
-          body.dark-mode .page__content {
-            background-color: #000000 !important;
-            color: #e0e0e0 !important;
-          }
-          
-          body.dark-mode .page__inner-wrap {
-            background-color: #000000 !important;
-          }
-          
-          body.dark-mode .page__title {
-            color: #fff !important;
-          }
-          
-          body.dark-mode .archive__item-title {
-            color: #fff !important;
-          }
-          
-          body.dark-mode .archive__item-excerpt {
-            color: #ccc !important;
-          }
-          
-          /* Left Sidebar - Black Background */
+          /* Main Content Areas - Transparent to inherit dark background */
+          body.dark-mode .page__content,
+          body.dark-mode .initial-content,
+          body.dark-mode .page__inner-wrap,
           body.dark-mode .sidebar {
-            background-color: #000000 !important;
-            color: #e0e0e0 !important;
+            background-color: transparent !important;
+            color: #ffffff !important;
           }
           
-          body.dark-mode .sidebar .sticky {
-            background-color: #000000 !important;
+          /* Sidebar Styling */
+          body.dark-mode .sidebar {
+            background-color: transparent !important;
           }
           
-          /* Author Profile Section */
-          body.dark-mode .author__avatar img {
-            border: 3px solid #444 !important;
-          }
-          
-          /* Author Name - WHITE COLOR (as requested) */
+          /* Author name in sidebar - White (as requested) */
           body.dark-mode .author__content h3 {
             color: #ffffff !important;
           }
           
-          body.dark-mode .author__bio {
-            color: #ccc !important;
-          }
-          
-          /* Author URLs/Links - Blue Color */
-          body.dark-mode .author__urls {
-            color: #ccc !important;
-          }
-          
+          /* Sidebar links - Blue for consistency */
           body.dark-mode .author__urls a {
             color: #0066cc !important;
           }
@@ -184,84 +128,64 @@ layout: compress
             color: #004499 !important;
           }
           
-          body.dark-mode .author__urls li {
-            color: #ccc !important;
-          }
-          
-          /* Specific styling for social media icons */
-          body.dark-mode .author__urls .fa {
-            color: #0066cc !important;
-          }
-          
-          body.dark-mode .author__urls .fa:hover {
-            color: #004499 !important;
-          }
-          
-          /* Fix bottom white rows - Make them black */
+          /* Footer/Sitemap Section - Light Background (matches reference site) */
           body.dark-mode .page__footer {
-            background-color: #000000 !important;
-            color: #ccc !important;
-            border-top: 1px solid #444 !important;
+            background-color: rgb(242, 243, 243) !important;
+            color: #333333 !important;
+            border-top: 1px solid #ddd !important;
           }
           
-          body.dark-mode .page__footer-follow {
-            background-color: #000000 !important;
+          /* Footer content styling */
+          body.dark-mode .page__footer * {
+            background-color: rgb(242, 243, 243) !important;
+            color: #333333 !important;
           }
           
-          /* Keep footer links (sitemap, GitHub, etc.) visible */
-          body.dark-mode .page__footer-copyright {
-            color: #ccc !important;
-          }
-          
+          /* Footer links - Blue for visibility */
           body.dark-mode .page__footer a {
             color: #0066cc !important;
+            background-color: transparent !important;
           }
           
           body.dark-mode .page__footer a:hover {
             color: #004499 !important;
           }
           
-          /* Archive and content wrappers - Black background */
-          body.dark-mode .archive {
-            background-color: #000000 !important;
+          /* Footer headings (like "Sitemap") - Blue */
+          body.dark-mode .page__footer h4 {
+            color: #0066cc !important;
           }
           
-          body.dark-mode .archive__wrap {
-            background-color: #000000 !important;
+          /* Ensure all layout containers inherit dark background */
+          body.dark-mode .page__wrapper,
+          body.dark-mode .layout--single,
+          body.dark-mode .layout--archive,
+          body.dark-mode .layout--home,
+          body.dark-mode .page,
+          body.dark-mode main,
+          body.dark-mode .main-content {
+            background-color: transparent !important;
           }
           
-          body.dark-mode .entries-list {
-            background-color: #000000 !important;
+          /* Fix any remaining white sections */
+          body.dark-mode .page__hero,
+          body.dark-mode .page__hero-wrap,
+          body.dark-mode .page__lead {
+            background-color: transparent !important;
           }
           
-          /* Dark mode toggle button adjustments for dark mode */
-          body.dark-mode .theme-toggle {
-            border-color: #e0e0e0;
-            color: #e0e0e0;
+          /* Content text styling */
+          body.dark-mode .page__content p,
+          body.dark-mode .page__content h1,
+          body.dark-mode .page__content h2,
+          body.dark-mode .page__content h3,
+          body.dark-mode .page__content h4,
+          body.dark-mode .page__content h5,
+          body.dark-mode .page__content h6 {
+            color: #ffffff !important;
           }
           
-          body.dark-mode .theme-toggle:hover {
-            background: #e0e0e0;
-            color: #1a1a1a;
-          }
-          
-          /* Additional dark mode styles for academic content */
-          body.dark-mode .archive__item {
-            border-bottom: 1px solid #444 !important;
-            background-color: #000000 !important;
-          }
-          
-          body.dark-mode .list__item {
-            border-bottom: 1px solid #444 !important;
-            background-color: #000000 !important;
-          }
-          
-          body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, 
-          body.dark-mode h4, body.dark-mode h5, body.dark-mode h6 {
-            color: #fff !important;
-          }
-          
-          /* Content Links - Blue Theme */
+          /* Links in main content */
           body.dark-mode .page__content a {
             color: #0066cc !important;
           }
@@ -270,328 +194,30 @@ layout: compress
             color: #004499 !important;
           }
           
-          /* Archive and List Links */
-          body.dark-mode .archive__item-title a {
-            color: #0066cc !important;
-          }
-          
-          body.dark-mode .archive__item-title a:hover {
-            color: #004499 !important;
-          }
-          
-          /* Buttons */
-          body.dark-mode .btn {
-            background-color: #0066cc !important;
-            color: #ffffff !important;
-            border: 1px solid #0066cc !important;
-          }
-          
-          body.dark-mode .btn:hover {
-            background-color: #004499 !important;
-            color: #fff !important;
-            border: 1px solid #004499 !important;
-          }
-          
-          /* Mobile Navigation Menu */
-          @media (max-width: 768px) {
-            body.dark-mode .greedy-nav__toggle {
-              color: #0066cc !important;
-            }
-            
-            body.dark-mode .hidden-links {
-              background-color: #ffffff !important;
-              border: 1px solid #ddd !important;
-            }
-            
-            body.dark-mode .hidden-links a {
-              color: #0066cc !important;
-            }
-            
-            body.dark-mode .hidden-links a:hover {
-              background-color: #f0f0f0 !important;
-              color: #004499 !important;
-            }
-          }
-          
-          /* Additional Mobile Optimizations */
-          @media (max-width: 480px) {
-            .theme-toggle {
-              width: 40px;
-              height: 40px;
-              font-size: 16px;
-              bottom: 15px;
-              right: 15px;
-            }
-          }
-          
-          /* Ensure proper contrast for accessibility */
-          body.dark-mode .author__urls .label {
-            color: #ccc !important;
-          }
-          
-          /* Publication/Project specific styling */
-          body.dark-mode .archive__item-teaser {
-            border: 1px solid #444 !important;
-            background-color: #000000 !important;
-          }
-          
-          body.dark-mode .archive__item-body {
-            background-color: #000000 !important;
-          }
-          
-          /* Table styling in dark mode */
-          body.dark-mode table {
-            background-color: #1a1a1a !important;
-            color: #e0e0e0 !important;
-          }
-          
-          body.dark-mode th {
-            background-color: #444 !important;
-            color: #fff !important;
-          }
-          
-          body.dark-mode td {
-            border-color: #444 !important;
-          }
-          
-          /* Code blocks in dark mode */
-          body.dark-mode code {
-            background-color: #1a1a1a !important;
-            color: #e0e0e0 !important;
-          }
-          
-          body.dark-mode pre {
-            background-color: #1a1a1a !important;
-            color: #e0e0e0 !important;
-          }
-          
-          /* Fix any remaining white backgrounds */
-          body.dark-mode .wrapper {
-            background-color: #000000 !important;
-          }
-          
-          body.dark-mode .container {
-            background-color: #000000 !important;
-          }
-          
-          body.dark-mode .main-content {
-            background-color: #000000 !important;
-          }
-          
-          /* Ensure all content areas are black */
-          body.dark-mode .content {
-            background-color: #000000 !important;
-          }
-          
-          body.dark-mode .single {
-            background-color: #000000 !important;
-          }
-          
-          body.dark-mode .archive-single {
-            background-color: #000000 !important;
-          }
-
-      /* Additional Mobile Optimizations */
-      @media (max-width: 480px) {
-        .theme-toggle {
-          width: 40px;
-          height: 40px;
-          font-size: 16px;
-          bottom: 15px;
-          right: 15px;
-        }
-      }
-      
-      /* Ensure proper contrast for accessibility */
-      body.dark-mode .author__urls .label {
-        color: #ccc !important;
-      }
-      
-      /* Publication/Project specific styling */
-      body.dark-mode .archive__item-teaser {
-        border: 1px solid #444 !important;
-      }
-      
-      body.dark-mode .archive__item-body {
-        background-color: transparent !important;
-      }
-      
-      /* Table styling in dark mode */
-      body.dark-mode table {
-        background-color: #2d2d2d !important;
-        color: #e0e0e0 !important;
-      }
-      
-      body.dark-mode th {
-        background-color: #444 !important;
-        color: #fff !important;
-      }
-      
-      body.dark-mode td {
-        border-color: #444 !important;
-      }
-      
-      /* Code blocks in dark mode */
-      body.dark-mode code {
-        background-color: #2d2d2d !important;
-        color: #e0e0e0 !important;
-      }
-      
-      body.dark-mode pre {
-        background-color: #2d2d2d !important;
-        color: #e0e0e0 !important;
-      }
-
-        
-          /* TARGETED FIXES FOR REMAINING WHITE SECTIONS */
-          
-          /* Fix white row below navigation bar */
-          body.dark-mode .page__wrapper,
-          body.dark-mode .layout,
-          body.dark-mode .layout__wrapper,
-          body.dark-mode .site-wrapper,
-          body.dark-mode .main-wrapper,
-          body.dark-mode .content-wrapper,
-          body.dark-mode .page-wrapper {
-            background-color: #000000 !important;
-          }
-          
-          /* Target specific Academic Pages layout elements */
-          body.dark-mode .layout--single,
-          body.dark-mode .layout--archive,
-          body.dark-mode .layout--home,
-          body.dark-mode .layout--posts,
-          body.dark-mode .layout--categories,
-          body.dark-mode .layout--tags {
-            background-color: #000000 !important;
-          }
-          
-          /* Fix any remaining page containers */
-          body.dark-mode .page,
-          body.dark-mode .page__inner-wrap,
-          body.dark-mode .page__content-wrapper,
-          body.dark-mode .page__meta-wrapper {
-            background-color: #000000 !important;
-          }
-          
-          /* Target main content areas that might be white */
-          body.dark-mode main,
-          body.dark-mode .main,
-          body.dark-mode .main-content,
-          body.dark-mode .primary-content,
-          body.dark-mode .content,
-          body.dark-mode .site-content {
-            background-color: #000000 !important;
-          }
-          
-          /* Fix bottom white section - target footer wrappers */
-          body.dark-mode .site-footer,
-          body.dark-mode .footer,
-          body.dark-mode .footer-wrapper,
-          body.dark-mode .page__footer-wrapper,
-          body.dark-mode .site-footer-wrapper {
-            background-color: #000000 !important;
-          }
-          
-          /* Target any div elements that might be causing white sections */
-          body.dark-mode div[style*="background-color: white"],
-          body.dark-mode div[style*="background-color: #fff"],
-          body.dark-mode div[style*="background-color: #ffffff"],
-          body.dark-mode div[style*="background: white"],
-          body.dark-mode div[style*="background: #fff"],
-          body.dark-mode div[style*="background: #ffffff"] {
-            background-color: #000000 !important;
-          }
-          
-          /* Force override any inline styles */
-          body.dark-mode * {
-            background-color: inherit !important;
-          }
-          
-          body.dark-mode *:not(.masthead):not(.greedy-nav):not(.hidden-links):not(.theme-toggle) {
-            background-color: #000000 !important;
-          }
-          
-          /* Specific targeting for Academic Pages theme elements */
-          body.dark-mode .initial-content,
-          body.dark-mode .page__hero-wrap,
-          body.dark-mode .page__hero,
-          body.dark-mode .page__lead,
-          body.dark-mode .page__title-wrap {
-            background-color: #000000 !important;
-          }
-          
-          /* Target any section elements */
-          body.dark-mode section,
-          body.dark-mode .section,
-          body.dark-mode .page-section {
-            background-color: #000000 !important;
-          }
-          
-          /* Fix any article elements */
-          body.dark-mode article,
-          body.dark-mode .article,
-          body.dark-mode .post,
-          body.dark-mode .entry {
-            background-color: #000000 !important;
-          }
-          
-          /* Target any container classes */
-          body.dark-mode .container,
-          body.dark-mode .container-fluid,
-          body.dark-mode .wrapper,
-          body.dark-mode .wrap {
-            background-color: #000000 !important;
-          }
-          
-          /* Nuclear option - force all elements except navigation to be black */
-          body.dark-mode *:not(.masthead *):not(.greedy-nav *):not(.hidden-links *):not(.theme-toggle) {
-            background-color: #000000 !important;
-          }
-          
-          /* Ensure navigation elements stay white */
-          body.dark-mode .masthead,
-          body.dark-mode .masthead *,
-          body.dark-mode .greedy-nav,
-          body.dark-mode .greedy-nav *,
-          body.dark-mode .hidden-links,
-          body.dark-mode .hidden-links * {
+          /* Dropdown menu styling for mobile */
+          body.dark-mode .hidden-links {
             background-color: #ffffff !important;
           }
           
-          /* Keep toggle button styling */
-          body.dark-mode .theme-toggle {
-            background-color: transparent !important;
+          body.dark-mode .hidden-links a {
+            color: #0066cc !important;
           }
           
-          /* Additional specific selectors for common white section causes */
-          body.dark-mode .site,
-          body.dark-mode .site-inner,
-          body.dark-mode .content-area,
-          body.dark-mode .widget-area,
-          body.dark-mode .primary,
-          body.dark-mode .secondary {
-            background-color: #000000 !important;
+          /* Ensure proper contrast for all text elements */
+          body.dark-mode {
+            color: #ffffff !important;
           }
           
-          /* Target any Bootstrap or framework containers */
-          body.dark-mode .row,
-          body.dark-mode .col,
-          body.dark-mode [class*="col-"],
-          body.dark-mode .grid,
-          body.dark-mode .flex {
-            background-color: #000000 !important;
+          /* Override any stubborn white backgrounds */
+          body.dark-mode *:not(.masthead):not(.greedy-nav):not(.page__footer):not(.theme-toggle) {
+            background-color: inherit !important;
           }
           
-          /* Fix any remaining white backgrounds in specific areas */
-          body.dark-mode header:not(.masthead),
-          body.dark-mode footer:not(.page__footer),
-          body.dark-mode aside,
-          body.dark-mode nav:not(.greedy-nav) {
-            background-color: #000000 !important;
+          /* Smooth transitions for all elements */
+          body.dark-mode * {
+            transition: background-color 0.3s ease, color 0.3s ease !important;
           }
-
-      
+                
       /* Make container full-width */
       .container,
       .wrapper,
