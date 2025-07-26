@@ -28,7 +28,7 @@ layout: compress
           /* ===== SEAMLESS LAYOUT DARK MODE (Reference Website Strategy) ===== */
 
           /* Dark Mode Toggle Button */
-          .theme-toggle {
+/*           .theme-toggle {
             position: fixed;
             top: 20px;
             right: 20px;
@@ -250,8 +250,197 @@ layout: compress
           /* Smooth transitions */
           body.dark-mode * {
             transition: background-color 0.3s ease, color 0.3s ease !important;
-          }
-                          
+          } */
+                 /* ===== NAVIGATION STRUCTURE FIX (Reference Website Method) ===== */
+                
+                /* Dark Mode Toggle Button */
+                .theme-toggle {
+                  position: fixed;
+                  top: 20px;
+                  right: 20px;
+                  background-color: transparent;
+                  border: 2px solid #0066cc;
+                  border-radius: 50%;
+                  width: 50px;
+                  height: 50px;
+                  cursor: pointer;
+                  z-index: 1000;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  transition: all 0.3s ease;
+                }
+                
+                .theme-toggle:hover {
+                  background-color: #0066cc;
+                  color: #ffffff;
+                }
+                
+                .theme-toggle i {
+                  font-size: 20px;
+                  color: #0066cc;
+                  transition: color 0.3s ease;
+                }
+                
+                .theme-toggle:hover i {
+                  color: #ffffff;
+                }
+                
+                /* Mobile positioning */
+                @media (max-width: 768px) {
+                  .theme-toggle {
+                    top: auto;
+                    bottom: 20px;
+                    right: 20px;
+                    width: 45px;
+                    height: 45px;
+                  }
+                  
+                  .theme-toggle i {
+                    font-size: 18px;
+                  }
+                }
+                
+                /* ===== CRITICAL FIX: NAVIGATION STRUCTURE ===== */
+                
+                /* HTML element - Dark background in dark mode */
+                body.dark-mode html {
+                  background-color: rgb(3, 3, 3) !important;
+                }
+                
+                /* Body - Dark background in dark mode */
+                body.dark-mode {
+                  background-color: rgb(3, 3, 3) !important;
+                  color: #ffffff !important;
+                  transition: background-color 0.3s ease, color 0.3s ease;
+                }
+                
+                /* MASTHEAD - TRANSPARENT background (like reference site) */
+                body.dark-mode .masthead {
+                  background-color: transparent !important;
+                  border-bottom: 1px solid rgb(242, 243, 243) !important;
+                }
+                
+                /* GREEDY-NAV - WHITE background only (like reference site) */
+                body.dark-mode .greedy-nav {
+                  background-color: #ffffff !important;
+                  color: #333333 !important;
+                }
+                
+                /* Navigation links - Blue */
+                body.dark-mode .greedy-nav a,
+                body.dark-mode .masthead a {
+                  color: #0066cc !important;
+                }
+                
+                body.dark-mode .greedy-nav a:hover,
+                body.dark-mode .masthead a:hover {
+                  color: #004499 !important;
+                }
+                
+                /* All other layout elements - Transparent */
+                body.dark-mode .page__wrapper,
+                body.dark-mode .page__content,
+                body.dark-mode .page__inner-wrap,
+                body.dark-mode .initial-content,
+                body.dark-mode .layout--single,
+                body.dark-mode .sidebar {
+                  background-color: transparent !important;
+                }
+                
+                /* Sidebar styling */
+                body.dark-mode .sidebar {
+                  background-color: transparent !important;
+                }
+                
+                /* Author name - White */
+                body.dark-mode .author__content h3 {
+                  color: #ffffff !important;
+                }
+                
+                /* Sidebar links - Blue */
+                body.dark-mode .author__urls a {
+                  color: #0066cc !important;
+                }
+                
+                body.dark-mode .author__urls a:hover {
+                  color: #004499 !important;
+                }
+                
+                /* Content text styling */
+                body.dark-mode .page__content p,
+                body.dark-mode .page__content h1,
+                body.dark-mode .page__content h2,
+                body.dark-mode .page__content h3,
+                body.dark-mode .page__content h4,
+                body.dark-mode .page__content h5,
+                body.dark-mode .page__content h6,
+                body.dark-mode .page__content li,
+                body.dark-mode .page__content span,
+                body.dark-mode .page__content div {
+                  color: #ffffff !important;
+                }
+                
+                /* Content links */
+                body.dark-mode .page__content a {
+                  color: #0066cc !important;
+                }
+                
+                body.dark-mode .page__content a:hover {
+                  color: #004499 !important;
+                }
+                
+                /* Footer - Light background */
+                body.dark-mode .page__footer {
+                  background-color: rgb(242, 243, 243) !important;
+                  color: #333333 !important;
+                  border-top: 1px solid #ddd !important;
+                }
+                
+                body.dark-mode .page__footer * {
+                  background-color: rgb(242, 243, 243) !important;
+                  color: #333333 !important;
+                }
+                
+                body.dark-mode .page__footer a {
+                  color: #0066cc !important;
+                  background-color: transparent !important;
+                }
+                
+                body.dark-mode .page__footer a:hover {
+                  color: #004499 !important;
+                }
+                
+                body.dark-mode .page__footer h4 {
+                  color: #0066cc !important;
+                }
+                
+                /* Mobile dropdown menu */
+                body.dark-mode .hidden-links {
+                  background-color: #ffffff !important;
+                }
+                
+                body.dark-mode .hidden-links a {
+                  color: #0066cc !important;
+                }
+                
+                /* Radar chart text fix */
+                body.dark-mode svg text {
+                  fill: #ffffff !important;
+                  color: #ffffff !important;
+                }
+                
+                body.dark-mode [class*="radar"] text,
+                body.dark-mode [class*="skill"] text,
+                body.dark-mode [class*="chart"] text {
+                  color: #ffffff !important;
+                  fill: #ffffff !important;
+                }
+                
+                /* Smooth transitions */
+                body.dark-mode * {
+                  transition: background-color 0.3s ease, color 0.3s ease !important;
+                }         
       /* Make container full-width */
       .container,
       .wrapper,
@@ -287,28 +476,6 @@ layout: compress
       </footer>
     </div>
 
-    <!-- Include Darkmode.js library -->
-<!--     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script> -->
-  
-    <!-- Initialize Darkmode.js -->
-<!--     <script>
-      const options = {
-        bottom: '32px', // Position from the bottom
-        right: '32px', // Position from the right
-        left: 'unset', // Position from the left
-        time: '0.5s', // Transition time
-        mixColor: '#fff', // Color used in the transition
-        backgroundColor: '#fff', // Background color in light mode
-        buttonColorDark: '#100f2c', // Button color in dark mode
-        buttonColorLight: '#fff', // Button color in light mode
-        saveInCookies: true, // Save user preference in cookies
-        label: '🌓', // Text or icon for the button
-        autoMatchOsTheme: true // Automatically match OS theme
-      }
-    
-      const darkmode = new Darkmode(options);
-      darkmode.showWidget();
-    </script> -->
     
     {% include scripts.html %}
         <script>
