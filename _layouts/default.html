@@ -442,6 +442,156 @@ layout: compress
         color: #e0e0e0 !important;
       }
 
+        
+          /* TARGETED FIXES FOR REMAINING WHITE SECTIONS */
+          
+          /* Fix white row below navigation bar */
+          body.dark-mode .page__wrapper,
+          body.dark-mode .layout,
+          body.dark-mode .layout__wrapper,
+          body.dark-mode .site-wrapper,
+          body.dark-mode .main-wrapper,
+          body.dark-mode .content-wrapper,
+          body.dark-mode .page-wrapper {
+            background-color: #000000 !important;
+          }
+          
+          /* Target specific Academic Pages layout elements */
+          body.dark-mode .layout--single,
+          body.dark-mode .layout--archive,
+          body.dark-mode .layout--home,
+          body.dark-mode .layout--posts,
+          body.dark-mode .layout--categories,
+          body.dark-mode .layout--tags {
+            background-color: #000000 !important;
+          }
+          
+          /* Fix any remaining page containers */
+          body.dark-mode .page,
+          body.dark-mode .page__inner-wrap,
+          body.dark-mode .page__content-wrapper,
+          body.dark-mode .page__meta-wrapper {
+            background-color: #000000 !important;
+          }
+          
+          /* Target main content areas that might be white */
+          body.dark-mode main,
+          body.dark-mode .main,
+          body.dark-mode .main-content,
+          body.dark-mode .primary-content,
+          body.dark-mode .content,
+          body.dark-mode .site-content {
+            background-color: #000000 !important;
+          }
+          
+          /* Fix bottom white section - target footer wrappers */
+          body.dark-mode .site-footer,
+          body.dark-mode .footer,
+          body.dark-mode .footer-wrapper,
+          body.dark-mode .page__footer-wrapper,
+          body.dark-mode .site-footer-wrapper {
+            background-color: #000000 !important;
+          }
+          
+          /* Target any div elements that might be causing white sections */
+          body.dark-mode div[style*="background-color: white"],
+          body.dark-mode div[style*="background-color: #fff"],
+          body.dark-mode div[style*="background-color: #ffffff"],
+          body.dark-mode div[style*="background: white"],
+          body.dark-mode div[style*="background: #fff"],
+          body.dark-mode div[style*="background: #ffffff"] {
+            background-color: #000000 !important;
+          }
+          
+          /* Force override any inline styles */
+          body.dark-mode * {
+            background-color: inherit !important;
+          }
+          
+          body.dark-mode *:not(.masthead):not(.greedy-nav):not(.hidden-links):not(.theme-toggle) {
+            background-color: #000000 !important;
+          }
+          
+          /* Specific targeting for Academic Pages theme elements */
+          body.dark-mode .initial-content,
+          body.dark-mode .page__hero-wrap,
+          body.dark-mode .page__hero,
+          body.dark-mode .page__lead,
+          body.dark-mode .page__title-wrap {
+            background-color: #000000 !important;
+          }
+          
+          /* Target any section elements */
+          body.dark-mode section,
+          body.dark-mode .section,
+          body.dark-mode .page-section {
+            background-color: #000000 !important;
+          }
+          
+          /* Fix any article elements */
+          body.dark-mode article,
+          body.dark-mode .article,
+          body.dark-mode .post,
+          body.dark-mode .entry {
+            background-color: #000000 !important;
+          }
+          
+          /* Target any container classes */
+          body.dark-mode .container,
+          body.dark-mode .container-fluid,
+          body.dark-mode .wrapper,
+          body.dark-mode .wrap {
+            background-color: #000000 !important;
+          }
+          
+          /* Nuclear option - force all elements except navigation to be black */
+          body.dark-mode *:not(.masthead *):not(.greedy-nav *):not(.hidden-links *):not(.theme-toggle) {
+            background-color: #000000 !important;
+          }
+          
+          /* Ensure navigation elements stay white */
+          body.dark-mode .masthead,
+          body.dark-mode .masthead *,
+          body.dark-mode .greedy-nav,
+          body.dark-mode .greedy-nav *,
+          body.dark-mode .hidden-links,
+          body.dark-mode .hidden-links * {
+            background-color: #ffffff !important;
+          }
+          
+          /* Keep toggle button styling */
+          body.dark-mode .theme-toggle {
+            background-color: transparent !important;
+          }
+          
+          /* Additional specific selectors for common white section causes */
+          body.dark-mode .site,
+          body.dark-mode .site-inner,
+          body.dark-mode .content-area,
+          body.dark-mode .widget-area,
+          body.dark-mode .primary,
+          body.dark-mode .secondary {
+            background-color: #000000 !important;
+          }
+          
+          /* Target any Bootstrap or framework containers */
+          body.dark-mode .row,
+          body.dark-mode .col,
+          body.dark-mode [class*="col-"],
+          body.dark-mode .grid,
+          body.dark-mode .flex {
+            background-color: #000000 !important;
+          }
+          
+          /* Fix any remaining white backgrounds in specific areas */
+          body.dark-mode header:not(.masthead),
+          body.dark-mode footer:not(.page__footer),
+          body.dark-mode aside,
+          body.dark-mode nav:not(.greedy-nav) {
+            background-color: #000000 !important;
+          }
+
+      
       /* Make container full-width */
       .container,
       .wrapper,
