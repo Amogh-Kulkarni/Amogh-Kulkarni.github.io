@@ -76,7 +76,11 @@ layout: compress
           }
           
           /* ===== SEAMLESS DARK MODE LAYOUT ===== */
-          
+            /* THE MISSING PIECE - Target HTML element */
+            body.dark-mode html {
+              background-color: rgb(3, 3, 3) !important;
+            }
+                  
           /* Body - Dark background (matches reference site exactly) */
           body.dark-mode {
             background-color: rgb(3, 3, 3) !important;
