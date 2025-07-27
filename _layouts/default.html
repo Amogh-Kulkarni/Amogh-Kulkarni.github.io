@@ -78,24 +78,40 @@ layout: compress
                 /* ===== CRITICAL FIX: NAVIGATION STRUCTURE ===== */
                 
                 /* HTML element - Dark background in dark mode */
-                body.dark-mode html {
+                /*body.dark-mode html {
                   background-color: rgb(3, 3, 3) !important;
                 }
                 
                 /* Body - Dark background in dark mode */
-                body.dark-mode {
+                /*body.dark-mode {
                   background-color: rgb(3, 3, 3) !important;
                   color: #ffffff !important;
                   transition: background-color 0.3s ease, color 0.3s ease;
                 }
                 
                 /* MASTHEAD - TRANSPARENT background (like reference site) */
-                body.dark-mode .masthead {
+                /*body.dark-mode .masthead {
                /* background-color: transparent !important;*/
-                  background-color: #000000 !important; 
-                  border-bottom: 2px solid rgb(242, 243, 243) !important;
-                }
+/*                   background-color: #000000 !important; 
+                  border-bottom: 2px solid rgb(242, 243, 243) !important;} */
+
+                        /* NEW - GitHub colors */
+                  body.dark-mode html {
+                    background-color: #0d1117 !important;
+                  }
+                  
+                  body.dark-mode {
+                    background-color: #0d1117 !important;
+                    color: #f0f6fc !important;
+                  }
+                  
+                  body.dark-mode .masthead {
+                    background-color: #24292f !important;
+                    border-bottom: 2px solid #30363d !important;
+                  }
+
                 
+      
                 /* GREEDY-NAV - WHITE background only (like reference site) */
                 body.dark-mode .greedy-nav {
                   background-color: #ffffff !important;
